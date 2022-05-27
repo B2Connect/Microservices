@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "INR",
+        "image": "https://cdn.countryflags.com/thumbs/india/flag-round-250.png",
+        "code": "INR"
+      },
+      {
+        "id": 2,
+        "title": "NPR",
+        "image": "https://cdn.countryflags.com/thumbs/nepal/flag-round-250.png",
+        "code": "NPR"
+      },
+      {
+        "id": 3,
+        "title": "PHP",
+        "image":
+          "https://i.pinimg.com/originals/33/56/4a/33564a5b0ba7e3a175484dc1523a2cff.png",
+        "code": "PHP"
+  
+      },
+      {
+        "id": 4,
+        "title": "PKR",
+        "image": "https://vectorflags.s3.amazonaws.com/flags/pk-circle-01.png",
+        "code": "PKR"
+      }
+     
+]

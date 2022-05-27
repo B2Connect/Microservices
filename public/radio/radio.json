@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "image": "/images/virgin.png",
+        "stream": "",
+        "name": "Virgin Dubai",
+        "cat": ["English"],
+        "subline": "Music station",
+        "fetch": "https://n01.radiojar.com/nhq0vcqwuueuv?rj-ttl=5&rj-tok=AAABgP_hiXEAzRxzaA1MkYV9VA"
+    }, 
+    {
+        "id": 2,
+        "image": "/images/suno.png",
+        "stream": "",
+        "name": "Suno 1024",
+        "cat": ["Hindi", "Bollywood"],
+        "subline": "Bollywood",
+        "fetch": "https://eu8.fastcast4u.com/proxy/clyedupq?mp=/1"
+    },
+    {
+        "id": 3,
+        "image": "/images/hit.jpeg",
+        "stream": "",
+        "name": "Hit 96.7 Malayalam",
+        "cat": ["Malayalam"],
+        "subline": "Malayalam station in the UAE",
+        "fetch": "https://n13.radiojar.com/3yygc0pwuueuv?rj-ttl=5&rj-tok=AAABgQA4608An4i4EJd8rPz7wA"
+    },
+    {
+        "id": 4,
+        "image": "/images/tamil.webp",
+        "stream": "",
+        "name": "Tamil FM",
+        "cat": ["Hindi", "english"],
+        "subline": "Tamil songs and top kollywood songs",
+        "fetch": "https://node-18.zeno.fm/pq1y91zes18uv?rj-ttl=5&rj-tok=AAABfzVK264AvWMXFzxj7pLA5g"
+    },
+    {
+        "id": 5,
+        "image": "/images/tag.webp",
+        "stream": "",
+        "name": "Tag 91.1",
+        "cat": ["Hindi"],
+        "subline": "Filipino Radio Station in the UAE",
+        "fetch": "https://n13.radiojar.com/bpv82qebsxquv?rj-ttl=5&rj-tok=AAABgQA8L5EA87Cl8uiBfhHKTQ"
+    },
+    {
+        "id": 6,
+        "image": "/images/arabiya.webp",
+        "stream": "",
+        "name": "Al Arabiya 99",
+        "cat": ["Arabic"],
+        "subline": "Music News Entertainment",
+        "fetch": "https://n12.radiojar.com/s1mygd1frxquv?rj-ttl=5&rj-tok=AAABgQSoglEAIKNQmIe15NeFDA"
+    },
+    {
+        "id": 7,
+        "image": "https://cdn.onlineradiobox.com/img/l/2/18832.v2.png",
+        "stream": "",
+        "name": "Titter FM Dubai",
+        "cat": ["Arabic", "English"],
+        "subline": "Hit Music Station",
+        "fetch": "http://64.150.176.9:8211/;"
+    }
+
+    
+]
