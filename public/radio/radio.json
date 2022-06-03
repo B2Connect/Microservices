@@ -15,7 +15,7 @@
         "name": "Suno 1024",
         "cat": ["Hindi", "Bollywood"],
         "subline": "Bollywood",
-        "fetch": "https://eu8.fastcast4u.com/proxy/clyedupq?mp=/1"
+        "fetch": "http://51.255.235.165:5476/;stream.mp3"
     },
     {
         "id": 3,
@@ -33,7 +33,7 @@
         "name": "Tamil FM",
         "cat": ["Hindi", "english"],
         "subline": "Tamil songs and top kollywood songs",
-        "fetch": "https://node-18.zeno.fm/pq1y91zes18uv?rj-ttl=5&rj-tok=AAABfzVK264AvWMXFzxj7pLA5g"
+        "fetch": "https://node-35.zeno.fm/gp5k6qs1bg0uv?rj-ttl=5&rj-tok=AAABeh8tgoMAW9HEESWYHBhPTg"
     },
     {
         "id": 5,
