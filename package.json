@@ -21,6 +21,7 @@
     "react-currency-input-field": "^3.6.4",
     "react-dom": "18.1.0",
     "react-icons": "^4.3.1",
+    "react-player": "^2.10.1",
     "react-player": "^2.10.1"
   },
   "devDependencies": {
