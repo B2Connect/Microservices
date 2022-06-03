@@ -64,7 +64,7 @@ export default function Home() {
           </span>
         </a>
       </footer>
-    </div>,
-    document.getElementById('root')
+    </div>
+    
   )
 }
