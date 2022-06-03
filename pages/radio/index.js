@@ -13,12 +13,12 @@ import {
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import {
-  AiOutlineHeart,
+
   AiOutlinePlayCircle,
   AiOutlinePauseCircle,
 } from "react-icons/ai";
 import ReactAudioPlayer from "react-audio-player";
-
+import ReactPlayer from "react-player";
 const spin = keyframes`
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -34,6 +34,11 @@ function index() {
   const [playerPlay, setPlayerPlay] = useState(false);
   const [audioStatus, setAudioStatus] = useState(false);
   const [catsData, setCatsData] = useState([]);
+
+
+
+
+  const toggle = () => setPlaying(!playing);
 
   const prefersReducedMotion = usePrefersReducedMotion();
 
@@ -244,6 +249,8 @@ function index() {
                     key={radio.id}
                     onClick={() => {
                       setCurrentRadioData(radio);
+                      setPlayerPlay(false);
+        
                       setPlayerPlay(true);
                     }}
                   >
@@ -399,13 +406,15 @@ function index() {
             ) : null}
           </Flex>
           {playerPlay ? (
-            <ReactAudioPlayer
-              src={currentRadioData?.fetch}
-              ref={(element) => {
-                setPlayerRef(element);
+          
+            <ReactPlayer
+              url={currentRadioData?.fetch}
+              playing={true}
+              onPlay={() => {
+                setAudioStatus(true);
               }}
-              autoPlay
-              onPlay={() => setAudioStatus(true)}
+              width={0}
+              height={0}
             />
           ) : null}
         </Box>
