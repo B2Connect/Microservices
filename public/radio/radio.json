@@ -13,7 +13,7 @@
         "image": "/images/suno.png",
         "stream": "",
         "name": "Suno 1024",
-        "cat": ["Hindi", "Bollywood"],
+        "cat": ["Hindi"],
         "subline": "Bollywood",
         "fetch": "http://51.255.235.165:5476/;stream.mp3"
     },
@@ -40,7 +40,7 @@
         "image": "/images/tag.webp",
         "stream": "",
         "name": "Tag 91.1",
-        "cat": ["Hindi"],
+        "cat": ["Tagalog"],
         "subline": "Filipino Radio Station in the UAE",
         "fetch": "https://n13.radiojar.com/bpv82qebsxquv?rj-ttl=5&rj-tok=AAABgQA8L5EA87Cl8uiBfhHKTQ"
     },
@@ -58,7 +58,7 @@
         "image": "https://cdn.onlineradiobox.com/img/l/2/18832.v2.png",
         "stream": "",
         "name": "Titter FM Dubai",
-        "cat": ["Arabic", "English"],
+        "cat": ["Arabic"],
         "subline": "Hit Music Station",
         "fetch": "http://64.150.176.9:8211/;"
     }
