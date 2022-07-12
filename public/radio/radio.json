@@ -31,7 +31,7 @@
         "image": "/images/tamil.webp",
         "stream": "",
         "name": "Tamil FM",
-        "cat": ["Hindi", "english"],
+        "cat": ["Tamil"],
         "subline": "Tamil songs and top kollywood songs",
         "fetch": "https://node-35.zeno.fm/gp5k6qs1bg0uv?rj-ttl=5&rj-tok=AAABeh8tgoMAW9HEESWYHBhPTg"
     },
