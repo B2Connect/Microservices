@@ -1,6 +1,5 @@
 import { View, Text, SafeAreaView, FlatList } from "react-native-web";
-import ReactPlayer from 'react-player';
-
+import YouTube from "react-youtube";
 
 const DATA = [
   {
@@ -78,24 +77,28 @@ const index = () => {
             horizontal
             keyExtractor={(item) => item.id}
             renderItem={({ item }) => (
-    
-              <View style={{
-                marginHorizontal: 10,
-                marginVertical: 20
-              }}>
-              <View style={{
-                background: "#cbd5e0",
-                
-                borderRadius: 20
-              }}>
-              <Text style={{
-                padding: "15px",
-               
-              }}>{item.title}</Text>
+              <View
+                style={{
+                  marginHorizontal: 10,
+                  marginVertical: 20,
+                }}
+              >
+                <View
+                  style={{
+                    background: "#cbd5e0",
 
+                    borderRadius: 20,
+                  }}
+                >
+                  <Text
+                    style={{
+                      padding: "15px",
+                    }}
+                  >
+                    {item.title}
+                  </Text>
                 </View>
               </View>
-          
             )}
           />
         </View>
@@ -105,17 +108,20 @@ const index = () => {
             vertical
             keyExtractor={(item) => item.id}
             renderItem={({ item }) => (
-              <>
-                <View
-                  style={{
-                    marginVertical: 10,
-                  }}
-                >
-                    <View>
-                    <ReactPlayer width={"100%"} url={"https://www.youtube.com/watch?v=HdscSv53dGI"} />
-                    </View>
+              <View
+                style={{
+                  marginVertical: 10,
+                }}
+              >
+                <View>
+                  <YouTube
+                    opts={{
+                      width: "100%",
+                    }}
+                    videoId={"HdscSv53dGI"}
+                  />
                 </View>
-              </>
+              </View>
             )}
           />
         </View>
