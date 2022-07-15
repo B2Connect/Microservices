@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { View, Text, SafeAreaView, FlatList } from "react-native-web";
 import YouTube from "react-youtube";
+import { Player, Controls } from "@lottiefiles/react-lottie-player";
 
 const DATA = [
   {
@@ -47,27 +49,33 @@ const DATA = [
 const FilterData = [
   {
     id: 1,
-    title: "English",
+    title: "All",
+    icon: "",
   },
   {
     id: 2,
-    title: "Hindi",
+    title: "World",
+    icon: "https://assets8.lottiefiles.com/packages/lf20_B6txqj.json",
   },
   {
     id: 3,
-    title: "Malayalam",
+    title: "Tech",
+    icon: "https://assets8.lottiefiles.com/private_files/lf30_wo5lnbyz.json",
   },
   {
     id: 3,
-    title: "Malayalam",
+    title: "Sport",
+    icon: "https://assets4.lottiefiles.com/packages/lf20_lz5rbiit.json",
   },
   {
     id: 3,
-    title: "Malayalam",
+    title: "India",
+    icon: "",
   },
 ];
 
 const index = () => {
+  const [videoPlaying, setVideoPlaying] = useState(false);
   return (
     <View>
       <SafeAreaView>
@@ -90,13 +98,30 @@ const index = () => {
                     borderRadius: 20,
                   }}
                 >
-                  <Text
+                  <View
                     style={{
-                      padding: "15px",
+                      paddingVertical: "10px",
+                      paddingHorizontal: "20px",
+                      display: "flex",
+                      flexDirection: "row",
+                      justifyContent: "center",
                     }}
                   >
+                    {item.icon && (
+                      <Player
+                        autoplay
+                        loop
+                        src={item.icon}
+                        style={{
+                          height: "25px",
+                          width: "25px",
+                          marginRight: 5,
+                        }}
+                      ></Player>
+                    )}
+
                     {item.title}
-                  </Text>
+                  </View>
                 </View>
               </View>
             )}
@@ -119,7 +144,22 @@ const index = () => {
                       width: "100%",
                     }}
                     videoId={"HdscSv53dGI"}
+                    onPlay={() => {
+                      if (!videoPlaying) {
+                        setVideoPlaying(true);
+                      }
+                    }}
+                    onPause={() => {
+                      setVideoPlaying(false);
+                    }}
+                    onEnd={() => {
+                      setVideoPlaying(false);
+                    }}
                   />
+                  <View>
+                    <Text>Video Title</Text>
+                    <Text>Video subtitle</Text>
+                  </View>
                 </View>
               </View>
             )}
