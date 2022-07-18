@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { View, Text, SafeAreaView, FlatList, Image } from "react-native-web";
+import { View, Text, SafeAreaView, FlatList, Image, ScrollView } from "react-native-web";
 import YouTube from "react-youtube";
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
 
@@ -8,42 +8,75 @@ const DATA = [
     id: 1,
     name: "title",
     desc: "desc",
+    channel: "Zee News",
+    channelLogo: "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
+    channelCat: "",
+    channelM3u: ""
   },
   {
     id: 1,
     name: "title",
     desc: "desc",
+    channel: "Zee News",
+    channelLogo: "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
+    channelCat: "",
+    channelM3u: ""
   },
   {
     id: 1,
     name: "title",
     desc: "desc",
+    channel: "Zee News",
+    channelLogo: "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
+    channelCat: "",
+    channelM3u: ""
+    
   },
   {
     id: 1,
     name: "title",
     desc: "desc",
+    channel: "Zee News",
+    channelLogo: "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
+    channelCat: "",
+    channelM3u: ""
   },
   {
     id: 1,
     name: "title",
     desc: "desc",
+    channel: "Zee News",
+    channelLogo: "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
+    channelCat: "",
+    channelM3u: ""
   },
   {
     id: 1,
     name: "title",
     desc: "desc",
+    channel: "Zee News",
+    channelLogo: "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
+    channelCat: "",
+    channelM3u: ""
   },
   {
     id: 1,
     name: "title",
     desc: "desc",
+    channel: "Zee News",
+    channelLogo: "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
+    channelCat: "",
+    channelM3u: ""
   },
 
   {
     id: 1,
     name: "title",
     desc: "desc",
+    channel: "Zee News",
+    channelLogo: "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
+    channelCat: "",
+    channelM3u: ""
   },
 ];
 const FilterData = [
@@ -230,9 +263,13 @@ const index = () => {
             )}
           />
         </View>
+        
         <View style={{marginTop: 20}}>
           <Text style={{marginLeft: 10, fontSize: 16, fontWeight: 600}}>Recommendation</Text>
-        <View style={{marginLeft: 10, padding: 5}}>
+          <View style={{marginLeft: 10, padding: 5}}>
+          <ScrollView>
+
+         
         <FlatList
             data={DATA}
             keyExtractor={(item) => item.id}
@@ -306,7 +343,9 @@ const index = () => {
               </View>
             )}
           />
-        </View>
+     
+          </ScrollView>
+          </View>
         </View>
       
       </SafeAreaView>
