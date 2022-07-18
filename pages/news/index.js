@@ -2,6 +2,8 @@ import { useState } from "react";
 import { View, Text, SafeAreaView, FlatList, Image, ScrollView } from "react-native-web";
 import YouTube from "react-youtube";
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
+import { Player as VideoPlayer } from 'video-react';
+import 'video-react/dist/video-react.css'; // import css
 
 const DATA = [
   {
@@ -356,7 +358,9 @@ const index = () => {
           </ScrollView>
           </View>
         </View>
-      
+        <VideoPlayer>
+      <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
+    </VideoPlayer>
       </SafeAreaView>
     </View>
   );
