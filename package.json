@@ -23,6 +23,7 @@
     "react-dom": "18.1.0",
     "react-icons": "^4.3.1",
     "react-native-web": "^0.18.6",
+    "react-player": "^2.10.1",
     "react-youtube": "^9.0.3"
   },
   "devDependencies": {
