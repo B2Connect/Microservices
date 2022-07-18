@@ -214,7 +214,9 @@ const index = () => {
             )}
           />
         </View>
-        <View>
+        <View style={{marginTop: 20}}>
+          <Text style={{marginLeft: 10, fontSize: 16, fontWeight: 600}}>Recommendation</Text>
+        <View style={{marginLeft: 10, padding: 5}}>
         <FlatList
             data={DATA}
             keyExtractor={(item) => item.id}
@@ -239,7 +241,7 @@ const index = () => {
                   <Image
                     style={{
                       width: "40%",
-                      height: 150,
+                      height: 100,
                       borderRadius: 15,
                     }}
                     source={{
@@ -280,21 +282,8 @@ const index = () => {
                       display: "flex",
                       flexDirection: "row"
                     }}>
-                      <View>
-                        <Image source={{
-                        uri: "https://seeklogo.com/images/Z/zee-entertainment-logo-7A69ADCA65-seeklogo.com.png"
-                        
-                        }}
-                        style={{
-                          width: 50,
-                          height: 50,
-                          borderRadius: 50
-                        }} />
-
-                      </View>
-                      <View style={{justifyContent: "center", marginHorizontal: 10}}>
-                        <Text style={{fontWeight: 600}}>ZEE NEWS</Text>
-                      </View>
+                     
+                   
                     </View>
                   </View>
                 </View>
@@ -302,6 +291,8 @@ const index = () => {
             )}
           />
         </View>
+        </View>
+      
       </SafeAreaView>
     </View>
   );
