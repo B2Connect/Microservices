@@ -132,7 +132,7 @@ const index = () => {
             )}
           />
         </View>
-        <View>
+        <View style={{marginHorizontal: 5}}>
           <FlatList
             data={DATA}
             horizontal
@@ -182,6 +182,94 @@ const index = () => {
                           fontWeight: 600,
                           fontSize: 16,
                           color: "#000000c9",
+                        }}
+                      >
+                        How the Warriors will quickly become on NBA..
+                      </Text>
+                    </View>
+                    <View style={{
+                      marginTop: 10,
+                      display: "flex",
+                      flexDirection: "row"
+                    }}>
+                      <View>
+                        <Image source={{
+                        uri: "https://seeklogo.com/images/Z/zee-entertainment-logo-7A69ADCA65-seeklogo.com.png"
+                        
+                        }}
+                        style={{
+                          width: 50,
+                          height: 50,
+                          borderRadius: 50
+                        }} />
+
+                      </View>
+                      <View style={{justifyContent: "center", marginHorizontal: 10}}>
+                        <Text style={{fontWeight: 600}}>ZEE NEWS</Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            )}
+          />
+        </View>
+        <View>
+        <FlatList
+            data={DATA}
+            keyExtractor={(item) => item.id}
+            renderItem={({ item }) => (
+              <View
+                style={{
+                  marginVertical: 10,
+                  width: "100%",
+                  maxWidth: "100%"
+                }}
+              >
+                <View
+                  style={{
+                    background: "white",
+                    marginRight: 20,
+                    borderRadius: 15,
+                    padding: 5,
+                    display: "flex",
+                    flexDirection: "row"
+                  }}
+                >
+                  <Image
+                    style={{
+                      width: "40%",
+                      height: 150,
+                      borderRadius: 15,
+                    }}
+                    source={{
+                      uri: "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
+                    }}
+                  />
+                  <View
+                    style={{
+                      padding: 10,
+                      maxWidth: "60%"
+                    }}
+                  >
+                    <View
+                      style={{
+                        marginVertical: 10,
+                      }}
+                    >
+                      <Text style={{ color: "gray", fontWeight: 600 }}>
+                        SPORT
+                      </Text>
+                    </View>
+                    <View style={{
+                             maxWidth: "100%"
+                    }}>
+                      <Text
+                        style={{
+                          fontWeight: 600,
+                          fontSize: 14,
+                          color: "#000000c9",
+                   
                         }}
                       >
                         How the Warriors will quickly become on NBA..
