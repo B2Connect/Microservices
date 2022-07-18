@@ -74,8 +74,17 @@ const FilterData = [
   },
 ];
 
+
 const index = () => {
   const [videoPlaying, setVideoPlaying] = useState(false);
+  const [initData, setInitData] = useState(DATA);
+  const [filtredData, setFiltredData] = useState([]);
+  const [selectedFilter, setSelectedFilter] = useState({});
+
+  const handelFilter = (item ) => {
+    setSelectedFilter(item);
+    
+  }
   return (
     <View
       style={{
@@ -95,13 +104,20 @@ const index = () => {
                   marginHorizontal: 10,
                   marginVertical: 20,
                 }}
+                onClick={() => handelFilter(item.title)}
               >
                 <View
-                  style={{
+                  style={
+                     [selectedFilter == item.title ? {
+                    background: "blue",
+
+                    borderRadius: 20,
+                  } : {
                     background: "#cbd5e0",
 
                     borderRadius: 20,
-                  }}
+                  }]
+                }
                 >
                   <View
                     style={{
