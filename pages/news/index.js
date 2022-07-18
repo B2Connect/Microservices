@@ -358,9 +358,21 @@ const index = () => {
           </ScrollView>
           </View>
         </View>
-        <VideoPlayer autoPlay playsInline>
-      <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
-    </VideoPlayer>
+        <View style={{
+          position: "fixed",
+          zIndex: 999,
+          top: 0,
+          background: "black",
+          minHeight: "100vh"
+        }}>
+  <View  >
+        <VideoPlayer autoPlay playsInline position={"fixed"}>
+          <source style={{position: "fixed"}} src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
+        </VideoPlayer>
+        </View>
+        </View>
+      
+       
       </SafeAreaView>
     </View>
   );

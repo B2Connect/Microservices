@@ -2983,6 +2983,16 @@ video-react@^0.15.0:
     prop-types "^15.7.2"
     redux "^4.0.1"
 
+"video-react@https://github.com/TamerJarrar/video-react.git":
+  version "0.14.1"
+  resolved "https://github.com/TamerJarrar/video-react.git#4315290d9c03b402125c75cb9c56ec9a23284b20"
+  dependencies:
+    "@babel/runtime" "^7.4.5"
+    classnames "^2.2.6"
+    lodash.throttle "^4.1.1"
+    prop-types "^15.7.2"
+    redux "^4.0.1"
+
 webidl-conversions@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
