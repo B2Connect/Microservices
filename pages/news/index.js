@@ -361,8 +361,9 @@ const index = () => {
     <View>
     
     <ReactHLS
-    
-    url="https://live-hls-web-aja.getaj.net/AJA/index.m3u8"
+    playesInline
+
+    url="https://live-hls-web-aja.getaj.net/AJA/02.m3u8"
     />
         </View>
       
