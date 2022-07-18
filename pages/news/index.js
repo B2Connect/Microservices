@@ -10,72 +10,72 @@ const DATA = [
     desc: "desc",
     channel: "Zee News",
     channelLogo: "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
-    channelCat: "",
+    channelCat: "Sport",
     channelM3u: ""
   },
   {
-    id: 1,
+    id: 2,
     name: "title",
     desc: "desc",
     channel: "Zee News",
     channelLogo: "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
-    channelCat: "",
+    channelCat: "World",
     channelM3u: ""
   },
   {
-    id: 1,
+    id: 3,
     name: "title",
     desc: "desc",
     channel: "Zee News",
     channelLogo: "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
-    channelCat: "",
+    channelCat: "Tech",
     channelM3u: ""
     
   },
   {
-    id: 1,
+    id: 4,
     name: "title",
     desc: "desc",
     channel: "Zee News",
     channelLogo: "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
-    channelCat: "",
+    channelCat: "India",
     channelM3u: ""
   },
   {
-    id: 1,
+    id: 5,
     name: "title",
     desc: "desc",
     channel: "Zee News",
     channelLogo: "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
-    channelCat: "",
+    channelCat: "India",
     channelM3u: ""
   },
   {
-    id: 1,
+    id: 6,
     name: "title",
     desc: "desc",
     channel: "Zee News",
     channelLogo: "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
-    channelCat: "",
+    channelCat: "World",
     channelM3u: ""
   },
   {
-    id: 1,
+    id: 7,
     name: "title",
     desc: "desc",
     channel: "Zee News",
     channelLogo: "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
-    channelCat: "",
+    channelCat: "Sport",
     channelM3u: ""
   },
 
   {
-    id: 1,
+    id: 8,
     name: "title",
     desc: "desc",
     channel: "Zee News",
     channelLogo: "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
-    channelCat: "",
+    channelCat: "Sport",
     channelM3u: ""
   },
 ];
@@ -96,12 +96,12 @@ const FilterData = [
     icon: "https://assets8.lottiefiles.com/private_files/lf30_wo5lnbyz.json",
   },
   {
-    id: 3,
+    id: 4,
     title: "Sport",
     icon: "https://assets4.lottiefiles.com/packages/lf20_lz5rbiit.json",
   },
   {
-    id: 3,
+    id: 5,
     title: "India",
     icon: "",
   },
@@ -109,15 +109,21 @@ const FilterData = [
 
 
 const index = () => {
-  const [videoPlaying, setVideoPlaying] = useState(false);
   const [initData, setInitData] = useState(DATA);
   const [filtredData, setFiltredData] = useState([]);
   const [selectedFilter, setSelectedFilter] = useState("All");
 
   const handelFilter = (item ) => {
     setSelectedFilter(item);
-    
+    if(item == "All") {
+    setFiltredData([]);
+    }else{
+      let newData = initData.filter(news => news.channelCat == item);
+      setFiltredData(newData);
+    }
+
   }
+
   return (
     <View
       style={{
@@ -138,6 +144,7 @@ const index = () => {
                   marginVertical: 20,
                 }}
                 onClick={() => handelFilter(item.title)}
+                key={item.id}
               >
                 <View
                   style={
@@ -183,7 +190,7 @@ const index = () => {
         </View>
         <View style={{marginHorizontal: 5}}>
           <FlatList
-            data={DATA}
+            data={filtredData.length > 0 ? filtredData :  initData}
             horizontal
             keyExtractor={(item) => item.id}
             renderItem={({ item }) => (
@@ -192,6 +199,7 @@ const index = () => {
                   marginVertical: 10,
                   width: 300,
                 }}
+                key={item.id}
               >
                 <View
                   style={{
@@ -222,7 +230,7 @@ const index = () => {
                       }}
                     >
                       <Text style={{ color: "gray", fontWeight: 600 }}>
-                        SPORT
+                        {item.channelCat}
                       </Text>
                     </View>
                     <View>
@@ -280,6 +288,7 @@ const index = () => {
                   width: "100%",
                   maxWidth: "100%"
                 }}
+                key={item.id}
               >
                 <View
                   style={{
@@ -313,7 +322,7 @@ const index = () => {
                       }}
                     >
                       <Text style={{ color: "gray", fontWeight: 600 }}>
-                        SPORT
+                        {item.channelCat}
                       </Text>
                     </View>
                     <View style={{
