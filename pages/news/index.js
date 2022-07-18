@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { View, Text, SafeAreaView, FlatList, Image, ScrollView } from "react-native-web";
-import YouTube from "react-youtube";
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
-import { Player as VideoPlayer } from 'video-react';
-import 'video-react/dist/video-react.css'; // import css
+import ReactHLS from 'react-hls';
+
 
 const DATA = [
   {
@@ -358,21 +357,15 @@ const index = () => {
           </ScrollView>
           </View>
         </View>
-        <View style={{
-          position: "fixed",
-          zIndex: 999,
-          top: 0,
-          background: "black",
-          minHeight: "100vh"
-        }}>
-  <View  >
-        <VideoPlayer autoPlay playsInline position={"fixed"}>
-          <source style={{position: "fixed"}} src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
-        </VideoPlayer>
-        </View>
+                    
+    <View>
+    
+    <ReactHLS
+    
+    url="https://live-hls-web-aja.getaj.net/AJA/index.m3u8"
+    />
         </View>
       
-       
       </SafeAreaView>
     </View>
   );
