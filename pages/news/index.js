@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { View, Text, SafeAreaView, FlatList } from "react-native-web";
+import { View, Text, SafeAreaView, FlatList, Image } from "react-native-web";
 import YouTube from "react-youtube";
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
 
@@ -77,7 +77,12 @@ const FilterData = [
 const index = () => {
   const [videoPlaying, setVideoPlaying] = useState(false);
   return (
-    <View>
+    <View
+      style={{
+        background: "#e2e6e9",
+        minHeight: "100vh",
+      }}
+    >
       <SafeAreaView>
         <View>
           <FlatList
@@ -130,35 +135,79 @@ const index = () => {
         <View>
           <FlatList
             data={DATA}
-            vertical
+            horizontal
             keyExtractor={(item) => item.id}
             renderItem={({ item }) => (
               <View
                 style={{
                   marginVertical: 10,
+                  width: 300,
                 }}
               >
-                <View>
-                  <YouTube
-                    opts={{
+                <View
+                  style={{
+                    background: "white",
+                    marginRight: 20,
+                    borderRadius: 15,
+                    padding: 5,
+                  }}
+                >
+                  <Image
+                    style={{
                       width: "100%",
+                      height: 200,
+                      borderRadius: 15,
                     }}
-                    videoId={"HdscSv53dGI"}
-                    onPlay={() => {
-                      if (!videoPlaying) {
-                        setVideoPlaying(true);
-                      }
-                    }}
-                    onPause={() => {
-                      setVideoPlaying(false);
-                    }}
-                    onEnd={() => {
-                      setVideoPlaying(false);
+                    source={{
+                      uri: "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
                     }}
                   />
-                  <View>
-                    <Text>Video Title</Text>
-                    <Text>Video subtitle</Text>
+                  <View
+                    style={{
+                      padding: 10,
+                    }}
+                  >
+                    <View
+                      style={{
+                        marginVertical: 10,
+                      }}
+                    >
+                      <Text style={{ color: "gray", fontWeight: 600 }}>
+                        SPORT
+                      </Text>
+                    </View>
+                    <View>
+                      <Text
+                        style={{
+                          fontWeight: 600,
+                          fontSize: 16,
+                          color: "#000000c9",
+                        }}
+                      >
+                        How the Warriors will quickly become on NBA..
+                      </Text>
+                    </View>
+                    <View style={{
+                      marginTop: 10,
+                      display: "flex",
+                      flexDirection: "row"
+                    }}>
+                      <View>
+                        <Image source={{
+                        uri: "https://seeklogo.com/images/Z/zee-entertainment-logo-7A69ADCA65-seeklogo.com.png"
+                        
+                        }}
+                        style={{
+                          width: 50,
+                          height: 50,
+                          borderRadius: 50
+                        }} />
+
+                      </View>
+                      <View style={{justifyContent: "center", marginHorizontal: 10}}>
+                        <Text style={{fontWeight: 600}}>ZEE NEWS</Text>
+                      </View>
+                    </View>
                   </View>
                 </View>
               </View>
