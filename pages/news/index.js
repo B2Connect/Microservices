@@ -358,7 +358,7 @@ const index = () => {
           </ScrollView>
           </View>
         </View>
-        <VideoPlayer>
+        <VideoPlayer autoPlay>
       <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
     </VideoPlayer>
       </SafeAreaView>
