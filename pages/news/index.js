@@ -79,7 +79,7 @@ const index = () => {
   const [videoPlaying, setVideoPlaying] = useState(false);
   const [initData, setInitData] = useState(DATA);
   const [filtredData, setFiltredData] = useState([]);
-  const [selectedFilter, setSelectedFilter] = useState({});
+  const [selectedFilter, setSelectedFilter] = useState("All");
 
   const handelFilter = (item ) => {
     setSelectedFilter(item);
@@ -140,8 +140,8 @@ const index = () => {
                         }}
                       ></Player>
                     )}
-
-                    {item.title}
+                      <View style={[selectedFilter == item.title ? {color: "white"} : {color: "black"}]}>{item.title}</View>
+                    
                   </View>
                 </View>
               </View>
