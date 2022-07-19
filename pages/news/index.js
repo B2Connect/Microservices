@@ -338,6 +338,8 @@ const index = () => {
                       maxWidth: "100%",
                     }}
                     key={item.id}
+                onClick={() => handleVideoSelect(item)}
+
                   >
                     <View
                       style={{
