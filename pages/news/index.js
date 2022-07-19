@@ -15,37 +15,37 @@ import ReactPlayer from "react-player/youtube";
 const DATA = [
   {
     id: 1,
-    name: "title",
-    desc: "desc",
-    channel: "Zee News",
+    name: "Russia Ukraine War Live | Putin vs Zelenskyy",
+    desc: "News18 India is one of the leading YouTube News channels which delivers Indian and international news 24x7 in Hindi. News18 India is the country's most trusted news platform where you can find not only breaking news and news headlines but also exclusive interviews, series, mythological stories and factual stories.",
+    channel: "News 18 India",
     channelLogo:
-      "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
-    channelCat: "Sport",
-    channelStream: "https://youtu.be/doqBgKIBBh8",
-    logo: "https://seeklogo.com/images/Z/zee-entertainment-logo-7A69ADCA65-seeklogo.com.png"
+      "https://i.ytimg.com/vi/TdAKeFVFkOU/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB5Z1Ik2Q6QDuP1Oy087gxjGOGFUg",
+    channelCat: "World",
+    channelStream: "https://youtu.be/7ZgNi7071v0",
+    logo: "https://yt3.ggpht.com/ytc/AKedOLR1QH1G7auCqp5BMAuj8t1iXcE10aFKyO2MwLm_Bg=s48-c-k-c0x00ffffff-no-rj"
   },
   {
     id: 2,
-    name: "title",
-    desc: "desc",
-    channel: "Zee News",
+    name: "DW News livestream | Headline news from around the world",
+    desc: "DW News goes deep beneath the surface, providing the key stories from Europe and around the world. Exciting reports and interviews from the worlds of politics, business, sports, culture and social media are presented by our DW anchors in 15-, 30- and 60-minute shows. Correspondents on the ground and experts in the studio deliver detailed insights and analysis of issues that affect our viewers around the world. We combine our expertise on Germany and Europe with a special interest in Africa and Asia while keeping track of stories from the rest of the world. Informative, entertaining and up-to-date – DW News, connecting the dots for our viewers across the globe.",
+    channel: "DW News",
     channelLogo:
-      "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
+      "https://i.ytimg.com/vi/GE_SfNVNyqk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDZ06CWmvzuGxVvll7j4PQgN1gK_Q",
     channelCat: "World",
-    channelStream: "https://youtu.be/doqBgKIBBh8",
-    logo: "https://seeklogo.com/images/Z/zee-entertainment-logo-7A69ADCA65-seeklogo.com.png"
+    channelStream: "https://youtu.be/GE_SfNVNyqk",
+    logo: "https://yt3.ggpht.com/ytc/AKedOLToHygnzerTBVOB3GsUcxsPiMP6dIOzFe9T90R0fAE=s48-c-k-c0x00ffffff-no-rj"
 
   },
   {
     id: 3,
-    name: "title",
-    desc: "desc",
-    channel: "Zee News",
+    name: "🔴 Al Jazeera English | Live from around the world",
+    desc: "@Al Jazeera English,  we focus on people and events that affect people's lives. We bring topics to light that often go under-reported, listening to all sides of the story and giving a 'voice to the voiceless'.",
+    channel: "Al Jazeera English",
     channelLogo:
-      "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
-    channelCat: "Tech",
-    channelStream: "https://youtu.be/doqBgKIBBh8",
-    logo: "https://seeklogo.com/images/Z/zee-entertainment-logo-7A69ADCA65-seeklogo.com.png"
+      "https://i.ytimg.com/vi/F-POY4Q0QSI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD1ruLttw9AyMsbNMGFg_vaKEUzBQ",
+    channelCat: "World",
+    channelStream: "https://youtu.be/F-POY4Q0QSI",
+    logo: "https://yt3.ggpht.com/ytc/AKedOLSWUC1XEN9_RtfZ6mUX_oN3jo1UuB-KU3tweyxPLb4=s48-c-k-c0x00ffffff-no-rj"
 
   },
   {
@@ -158,6 +158,9 @@ const index = () => {
   const handleVideoSelect = (video) => {
     setSelectedVideo(video);
     console.log(video)
+  }
+  const handleClose = () => {
+    setSelectedVideo({})
   }
 
   return (
@@ -437,7 +440,7 @@ const index = () => {
                 </View>
               </View>
               <View style={{position: "relative", top: "90%", alignItems: "center"}}>
-               <TouchableOpacity style={{background: "white", textAlign: "center", width: "80%", borderRadius: 20}}>
+               <TouchableOpacity style={{background: "white", textAlign: "center", width: "80%", borderRadius: 20}} onPress={handleClose}>
                 Close
                </TouchableOpacity>
               </View>
