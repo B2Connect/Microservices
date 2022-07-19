@@ -27,7 +27,7 @@ const DATA = [
   {
     id: 2,
     name: "DW News livestream | Headline news from around the world",
-    desc: "DW News goes deep beneath the surface, providing the key stories from Europe and around the world. Exciting reports and interviews from the worlds of politics, business, sports, culture and social media are presented by our DW anchors in 15-, 30- and 60-minute shows. Correspondents on the ground and experts in the studio deliver detailed insights and analysis of issues that affect our viewers around the world. We combine our expertise on Germany and Europe with a special interest in Africa and Asia while keeping track of stories from the rest of the world. Informative, entertaining and up-to-date – DW News, connecting the dots for our viewers across the globe.",
+    desc: "DW News goes deep beneath the surface, providing the key stories from Europe and around the world. Exciting reports and interviews from the worlds of politics, business, sports, culture and social media are presented by our DW anchors in 15-, 30- and 60-minute shows. ",
     channel: "DW News",
     channelLogo:
       "https://i.ytimg.com/vi/GE_SfNVNyqk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDZ06CWmvzuGxVvll7j4PQgN1gK_Q",
@@ -338,7 +338,7 @@ const index = () => {
                       maxWidth: "100%",
                     }}
                     key={item.id}
-                onClick={() => handleVideoSelect(item)}
+                    onClick={() => handleVideoSelect(item)}
 
                   >
                     <View
@@ -428,14 +428,14 @@ const index = () => {
             >
               <View style={{margin: 10}}>
                 <View>
-                  <Text style={{ color: "white", fontSize: 18, fontWeight: 600 }}>Channel Title</Text>
+                  <Text style={{ color: "white", fontSize: 18, fontWeight: 600 }}>{selectedViedo.name}</Text>
                 </View>
                 <View style={{marginTop: 15}}>
-                  <Text style={{ color: "white", fontSize: 14 }}>Channel description</Text>
+                  <Text style={{ color: "white", fontSize: 14 }}>{selectedViedo.desc}</Text>
                 </View>
               </View>
-              <View style={{position: "relative", top: "90%", alignItems: "center"}}>
-               <TouchableOpacity style={{background: "white", textAlign: "center", width: "80%", borderRadius: 20}} onPress={handleClose}>
+              <View style={{position: "relative", top: "20%", alignItems: "center"}}>
+               <TouchableOpacity style={{background: "white", textAlign: "center", width: "80%", borderRadius: 20, paddingVertical: 5}} onPress={handleClose}>
                 Close
                </TouchableOpacity>
               </View>
