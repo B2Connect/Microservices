@@ -182,7 +182,7 @@ const index = () => {
                   style={[
                     selectedFilter == item.title
                       ? {
-                          background: "blue",
+                          background: "#e3006b",
 
                           borderRadius: 20,
                         }
