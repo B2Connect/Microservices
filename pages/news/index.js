@@ -50,65 +50,43 @@ const DATA = [
   },
   {
     id: 4,
-    name: "title",
-    desc: "desc",
-    channel: "Zee News",
+    name: "TWiT Tech Podcast Network Live Stream",
+    desc: "TWiT.tv provides news, commentary, help & how-to, reviews, and perspective on the latest trends in digital tech. Join Leo Laporte, Jason Howell, Mikah Sargent, and Ant Pruitt along with other seasoned experts and journalists, for over a dozen shows focused on different areas of technology.",
+    channel: "TWiT Tech",
     channelLogo:
-      "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
-    channelCat: "India",
-    channelStream: "https://youtu.be/doqBgKIBBh8",
-    logo: "https://seeklogo.com/images/Z/zee-entertainment-logo-7A69ADCA65-seeklogo.com.png"
+      "https://i.ytimg.com/vi/LkI__S4XCGA/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBruL2SYppNmBftaOE3zNSu247C3g",
+    channelCat: "Tech",
+    channelStream: "https://youtu.be/LkI__S4XCGA",
+    logo: "https://yt3.ggpht.com/ytc/AKedOLSjGkE9ePuhHR_H-yGtk3qUaozxj-oG4mXLmal8Kw=s48-c-k-c0x00ffffff-no-rj"
 
   },
-  {
-    id: 5,
-    name: "title",
-    desc: "desc",
-    channel: "Zee News",
-    channelLogo:
-      "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
-    channelCat: "India",
-    channelStream: "https://youtu.be/doqBgKIBBh8",
-    logo: "https://seeklogo.com/images/Z/zee-entertainment-logo-7A69ADCA65-seeklogo.com.png"
-
-  },
+  
   {
     id: 6,
-    name: "title",
-    desc: "desc",
-    channel: "Zee News",
+    name: "beIN SPORTS News 24/7 Live World Sport News",
+    desc: "beIN SPORTS News Live 24/7",
+    channel: "beIN SPORTS",
     channelLogo:
-      "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
-    channelCat: "World",
-    channelStream: "https://youtu.be/doqBgKIBBh8",
-    logo: "https://seeklogo.com/images/Z/zee-entertainment-logo-7A69ADCA65-seeklogo.com.png"
+      "https://i.ytimg.com/vi/5VtrmK81NG4/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAVOmmb9ahMUesU4jhlCytvnGOJjw",
+    channelCat: "Sport",
+    channelStream: "https://youtu.be/5VtrmK81NG4",
+    logo: "https://yt3.ggpht.com/ytc/AKedOLTVgHcF-lg44t32-FJpA4Db6xiKkt5GigbWiCq0Rw=s48-c-k-c0x00ffffff-no-rj"
 
   },
   {
     id: 7,
-    name: "title",
-    desc: "desc",
-    channel: "Zee News",
+    name: "India TV LIVE: Nupur Sharma Prophet Controversy.",
+    desc: "Nupur Sharma Prophet Row | Supreme Court: Nupur Sharma Prophet row: The Supreme Court will hear a plea by suspended BJP spokesperson Nupur Sharma, urging protection from arrest as well as the revival of her withdrawn petition, which had sought clubbing of FIRs lodged in several states over her remarks on the Prophet.",
+    channel: "India TV",
     channelLogo:
-      "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
-    channelCat: "Sport",
-    channelStream: "https://youtu.be/doqBgKIBBh8",
-    logo: "https://seeklogo.com/images/Z/zee-entertainment-logo-7A69ADCA65-seeklogo.com.png"
+      "https://i.ytimg.com/vi/EyTrwoXGPS8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDp5Ruh8z46NEw8KaZ4K-dmxYSXpA",
+    channelCat: "India",
+    channelStream: "https://youtu.be/EyTrwoXGPS8",
+    logo: "https://yt3.ggpht.com/y5S847YDNlDZNUUk3xmEfVMUDu2XSe0yAU_qvIpbwKi5VgIYQQc3FGeOANbgu-36sBEDpAwDAQ=s48-c-k-c0x00ffffff-no-rj"
 
   },
 
-  {
-    id: 8,
-    name: "title",
-    desc: "desc",
-    channel: "Zee News",
-    channelLogo:
-      "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
-    channelCat: "Sport",
-    channelStream: "https://youtu.be/doqBgKIBBh8",
-    logo: "https://seeklogo.com/images/Z/zee-entertainment-logo-7A69ADCA65-seeklogo.com.png"
-
-  },
+  
 ];
 const FilterData = [
   {
@@ -137,6 +115,21 @@ const FilterData = [
     icon: "",
   },
 ];
+
+const recommend = [
+  {
+    id: 3,
+    name: "🔴 Al Jazeera English | Live from around the world",
+    desc: "@Al Jazeera English,  we focus on people and events that affect people's lives. We bring topics to light that often go under-reported, listening to all sides of the story and giving a 'voice to the voiceless'.",
+    channel: "Al Jazeera English",
+    channelLogo:
+      "https://i.ytimg.com/vi/F-POY4Q0QSI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD1ruLttw9AyMsbNMGFg_vaKEUzBQ",
+    channelCat: "World",
+    channelStream: "https://youtu.be/F-POY4Q0QSI",
+    logo: "https://yt3.ggpht.com/ytc/AKedOLSWUC1XEN9_RtfZ6mUX_oN3jo1UuB-KU3tweyxPLb4=s48-c-k-c0x00ffffff-no-rj"
+
+  }
+]
 
 const index = () => {
   const [initData, setInitData] = useState(DATA);
@@ -335,7 +328,7 @@ const index = () => {
           <View style={{ marginLeft: 10, padding: 5 }}>
             <ScrollView>
               <FlatList
-                data={DATA}
+                data={recommend}
                 keyExtractor={(item) => item.id}
                 renderItem={({ item }) => (
                   <View
@@ -358,12 +351,12 @@ const index = () => {
                     >
                       <Image
                         style={{
-                          width: "40%",
+                          width: "40%", 
                           height: 100,
                           borderRadius: 15,
                         }}
                         source={{
-                          uri: "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
+                          uri: item.channelLogo,
                         }}
                       />
                       <View
@@ -393,7 +386,7 @@ const index = () => {
                               color: "#000000c9",
                             }}
                           >
-                            How the Warriors will quickly become on NBA..
+                            {item.name}
                           </Text>
                         </View>
                         <View
