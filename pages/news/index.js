@@ -416,7 +416,7 @@ const index = () => {
               scrollY: "none"
             }}
           >
-            <ReactPlayer width={"100%"} url={selectedViedo.channelStream} playing />
+            <ReactPlayer width={"100%"} autoplay url={selectedViedo.channelStream} playing />
             <View
               style={{
                 display: "flex",
