@@ -6,6 +6,8 @@ import {
   FlatList,
   Image,
   ScrollView,
+  Button,
+  TouchableOpacity,
 } from "react-native-web";
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import ReactPlayer from "react-player/youtube";
@@ -19,7 +21,8 @@ const DATA = [
     channelLogo:
       "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
     channelCat: "Sport",
-    channelM3u: "",
+    channelStream: "https://youtu.be/doqBgKIBBh8",
+    logo: "https://seeklogo.com/images/Z/zee-entertainment-logo-7A69ADCA65-seeklogo.com.png"
   },
   {
     id: 2,
@@ -29,7 +32,9 @@ const DATA = [
     channelLogo:
       "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
     channelCat: "World",
-    channelM3u: "",
+    channelStream: "https://youtu.be/doqBgKIBBh8",
+    logo: "https://seeklogo.com/images/Z/zee-entertainment-logo-7A69ADCA65-seeklogo.com.png"
+
   },
   {
     id: 3,
@@ -39,7 +44,9 @@ const DATA = [
     channelLogo:
       "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
     channelCat: "Tech",
-    channelM3u: "",
+    channelStream: "https://youtu.be/doqBgKIBBh8",
+    logo: "https://seeklogo.com/images/Z/zee-entertainment-logo-7A69ADCA65-seeklogo.com.png"
+
   },
   {
     id: 4,
@@ -49,7 +56,9 @@ const DATA = [
     channelLogo:
       "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
     channelCat: "India",
-    channelM3u: "",
+    channelStream: "https://youtu.be/doqBgKIBBh8",
+    logo: "https://seeklogo.com/images/Z/zee-entertainment-logo-7A69ADCA65-seeklogo.com.png"
+
   },
   {
     id: 5,
@@ -59,7 +68,9 @@ const DATA = [
     channelLogo:
       "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
     channelCat: "India",
-    channelM3u: "",
+    channelStream: "https://youtu.be/doqBgKIBBh8",
+    logo: "https://seeklogo.com/images/Z/zee-entertainment-logo-7A69ADCA65-seeklogo.com.png"
+
   },
   {
     id: 6,
@@ -69,7 +80,9 @@ const DATA = [
     channelLogo:
       "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
     channelCat: "World",
-    channelM3u: "",
+    channelStream: "https://youtu.be/doqBgKIBBh8",
+    logo: "https://seeklogo.com/images/Z/zee-entertainment-logo-7A69ADCA65-seeklogo.com.png"
+
   },
   {
     id: 7,
@@ -79,7 +92,9 @@ const DATA = [
     channelLogo:
       "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
     channelCat: "Sport",
-    channelM3u: "",
+    channelStream: "https://youtu.be/doqBgKIBBh8",
+    logo: "https://seeklogo.com/images/Z/zee-entertainment-logo-7A69ADCA65-seeklogo.com.png"
+
   },
 
   {
@@ -90,7 +105,9 @@ const DATA = [
     channelLogo:
       "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
     channelCat: "Sport",
-    channelM3u: "",
+    channelStream: "https://youtu.be/doqBgKIBBh8",
+    logo: "https://seeklogo.com/images/Z/zee-entertainment-logo-7A69ADCA65-seeklogo.com.png"
+
   },
 ];
 const FilterData = [
@@ -125,6 +142,8 @@ const index = () => {
   const [initData, setInitData] = useState(DATA);
   const [filtredData, setFiltredData] = useState([]);
   const [selectedFilter, setSelectedFilter] = useState("All");
+  const [selectedViedo, setSelectedVideo] = useState({})
+
 
   const handelFilter = (item) => {
     setSelectedFilter(item);
@@ -135,6 +154,11 @@ const index = () => {
       setFiltredData(newData);
     }
   };
+
+  const handleVideoSelect = (video) => {
+    setSelectedVideo(video);
+    console.log(video)
+  }
 
   return (
     <View
@@ -221,6 +245,7 @@ const index = () => {
                   width: 300,
                 }}
                 key={item.id}
+                onClick={() => handleVideoSelect(item)}
               >
                 <View
                   style={{
@@ -237,7 +262,7 @@ const index = () => {
                       borderRadius: 15,
                     }}
                     source={{
-                      uri: "https://c.ndtvimg.com/2021-01/q94dao18_coronavirus-vaccine-mumbai-twitter_625x300_16_January_21.jpg",
+                      uri: item.channelLogo,
                     }}
                   />
                   <View
@@ -262,7 +287,7 @@ const index = () => {
                           color: "#000000c9",
                         }}
                       >
-                        How the Warriors will quickly become on NBA..
+                        {item.name}
                       </Text>
                     </View>
                     <View
@@ -275,7 +300,7 @@ const index = () => {
                       <View>
                         <Image
                           source={{
-                            uri: "https://seeklogo.com/images/Z/zee-entertainment-logo-7A69ADCA65-seeklogo.com.png",
+                            uri: item.logo,
                           }}
                           style={{
                             width: 50,
@@ -290,7 +315,7 @@ const index = () => {
                           marginHorizontal: 10,
                         }}
                       >
-                        <Text style={{ fontWeight: 600 }}>ZEE NEWS</Text>
+                        <Text style={{ fontWeight: 600 }}>{item.channel}</Text>
                       </View>
                     </View>
                   </View>
@@ -382,19 +407,44 @@ const index = () => {
               />
             </ScrollView>
           </View>
-          <View
+          {selectedViedo && selectedViedo.channelStream &&  (
+ <View
             style={{
               position: "fixed",
               top: "50%",
               left: "50%",
               transform: "translate(-50%, -50%)",
               width: "100%",
-              background: "black",
-              height: "100%"
+              background: "#000000e0",
+              height: "100%",
+              scrollY: "none"
             }}
           >
-            <ReactPlayer width={"100%"} url="https://youtu.be/doqBgKIBBh8" />
+            <ReactPlayer width={"100%"} url={selectedViedo.channelStream} playing />
+            <View
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-around",
+              }}
+            >
+              <View style={{margin: 10}}>
+                <View>
+                  <Text style={{ color: "white", fontSize: 18, fontWeight: 600 }}>Channel Title</Text>
+                </View>
+                <View style={{marginTop: 15}}>
+                  <Text style={{ color: "white", fontSize: 14 }}>Channel description</Text>
+                </View>
+              </View>
+              <View style={{position: "relative", top: "90%", alignItems: "center"}}>
+               <TouchableOpacity style={{background: "white", textAlign: "center", width: "80%", borderRadius: 20}}>
+                Close
+               </TouchableOpacity>
+              </View>
+            </View>
           </View>
+          )}
+          
         </View>
       </SafeAreaView>
     </View>
