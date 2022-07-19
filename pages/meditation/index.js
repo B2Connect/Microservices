@@ -1,10 +1,12 @@
 import { Player } from "@lottiefiles/react-lottie-player";
+import { useState } from "react";
 import {
   FlatList,
   Image,
   SafeAreaView,
   ScrollView,
   Text,
+  TouchableOpacity,
   View,
 } from "react-native-web";
 
@@ -27,6 +29,7 @@ const Mods = [
   },
 ];
 const index = () => {
+    const [selectedMod, setSelectedMod] = useState("Recommendation")
   return (
     <SafeAreaView>
       <ScrollView>
@@ -111,7 +114,7 @@ const index = () => {
                   horizontal
                   keyExtractor={(item) => item.id}
                   renderItem={({ item }) => (
-                    <Text  key={item.id} style={{paddingRight: 30, color: "gray"}}>{item.name}</Text>
+                    <TouchableOpacity  key={item.id} style={[selectedMod == item.name ? {paddingRight: 30, color: "black", fontSize: 14} : {paddingRight: 30, color: "gray", fontSize: 14}]}>{item.name}</TouchableOpacity>
                   )}
                 />
              
@@ -123,7 +126,7 @@ const index = () => {
                   horizontal
                   keyExtractor={(item) => item.id}
                   renderItem={({ item }) => (
-                   <View style={{marginRight: 20}}>
+                   <TouchableOpacity style={{marginRight: 20}}>
                     <Image
                     source={{
                         uri: "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg"
@@ -133,7 +136,7 @@ const index = () => {
                         height: 200
                     }}
                     />
-                    </View>
+                    </TouchableOpacity>
                   )}
                 />    
                 </View>
