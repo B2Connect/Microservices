@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { View, Text, SafeAreaView, FlatList, Image, ScrollView } from "react-native-web";
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
-import ReactHLS from 'react-hls';
+import ReactPlayer from 'react-player'
+
 
 
 const DATA = [
@@ -358,14 +359,11 @@ const index = () => {
           </View>
         </View>
                     
-    <View>
-    
-    <ReactHLS
-    playesInline
+        <>
+        <ReactPlayer  url='https://live-hls-web-ajm.getaj.net/AJM/index.m3u8' />
 
-    url="https://live-hls-web-aja.getaj.net/AJA/02.m3u8"
-    />
-        </View>
+        </>
+   
       
       </SafeAreaView>
     </View>
