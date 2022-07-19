@@ -1,6 +1,7 @@
 import { Player } from "@lottiefiles/react-lottie-player";
 import {
   FlatList,
+  Image,
   SafeAreaView,
   ScrollView,
   Text,
@@ -110,10 +111,32 @@ const index = () => {
                   horizontal
                   keyExtractor={(item) => item.id}
                   renderItem={({ item }) => (
-                    <Text key={item.id} style={{paddingRight: 30}}>{item.name}</Text>
+                    <Text  key={item.id} style={{paddingRight: 30, color: "gray"}}>{item.name}</Text>
                   )}
                 />
+             
               </View>
+
+              <View>
+                <FlatList
+                  data={Mods}
+                  horizontal
+                  keyExtractor={(item) => item.id}
+                  renderItem={({ item }) => (
+                   <View style={{marginRight: 20}}>
+                    <Image
+                    source={{
+                        uri: "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg"
+                    }}
+                    style={{
+                        width: 180,
+                        height: 200
+                    }}
+                    />
+                    </View>
+                  )}
+                />    
+                </View>
             </View>
           </View>
         </View>
