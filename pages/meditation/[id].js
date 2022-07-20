@@ -26,8 +26,8 @@ const Post = () => {
                       "https://assets3.lottiefiles.com/packages/lf20_72GGiU.json"
                     }
                     style={{
-                      height: "200px",
-                      width: "200px",
+                      height: "300px",
+                      width: "300px",
                       marginRight: 5,
                     }}
                   ></Player>
