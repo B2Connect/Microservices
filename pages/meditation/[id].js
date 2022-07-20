@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import { ScrollView, View } from 'react-native-web'
+import { ScrollView, View, Image } from 'react-native-web'
 import { Player } from "@lottiefiles/react-lottie-player";
 import { useEffect, useState } from 'react';
 const sounds = require('./sounds')
@@ -28,12 +28,16 @@ const Post = () => {
                 alignItems:"center",
               
             }}>
-                 <Player
+                <View style={{
+                    
+
+                }}>
+                <Player
                     autoplay    
                     loop
-                    speed={0.1}
+                    speed={0.2}
                     src={
-                      "https://assets3.lottiefiles.com/packages/lf20_72GGiU.json"
+                      "https://assets3.lottiefiles.com/packages/lf20_gqhy4rmx.json"
                     }
                     style={{
                       height: "300px",
@@ -41,6 +45,21 @@ const Post = () => {
                       marginRight: 5,
                     }}
                   ></Player>
+                  <Image 
+                    source={{
+                       uri: "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg" 
+                    }}
+                    style={{
+                        width: 150,
+                        height: 150,
+                        position: "absolute",
+                        top: 80,
+                        left: 75,
+                        borderRadius: 100
+                    }}
+                  />
+                </View>
+                 
             </View>
            
         </ScrollView>
