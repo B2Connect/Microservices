@@ -1,5 +1,7 @@
 import { Player } from "@lottiefiles/react-lottie-player";
 import { useState } from "react";
+import ReactPlayer from 'react-player'
+
 import {
   FlatList,
   Image,
@@ -28,8 +30,41 @@ const Mods = [
     name: "Music",
   },
 ];
+const Sounds = [
+  {
+    id: 1,
+    name: "medetation sound",
+    image: "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg",
+    type: "Morning"
+  },
+  {
+    id: 2,
+    name: "medetation sound",
+    image: "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg",
+    type: "Morning"
+  },
+  {
+    id: 3,
+    name: "medetation sound",
+    image: "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg",
+    type: "Morning"
+  },
+  {
+    id: 4,
+    name: "medetation sound",
+    image: "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg",
+    type: "Morning"
+  },
+]
 const index = () => {
-    const [selectedMod, setSelectedMod] = useState("Recommendation")
+    const [selectedMod, setSelectedMod] = useState("Recommendation");
+
+    const handleSelectMod = (Mod) => {
+      setSelectedMod(Mod)
+    // console.log(Mod)
+      
+    }
+
   return (
     <SafeAreaView>
       <ScrollView>
@@ -99,7 +134,7 @@ const index = () => {
               </View>
             </View>
             <View style={{ paddingTop: 20 }}>
-              <Text style={{ fontSize: 18, fontWeight: 600 }}>Explor Mods</Text>
+              <Text style={{ fontSize: 18, fontWeight: 600 }}>Explore Moods</Text>
 
               <View
                 style={{
@@ -114,22 +149,22 @@ const index = () => {
                   horizontal
                   keyExtractor={(item) => item.id}
                   renderItem={({ item }) => (
-                    <TouchableOpacity  key={item.id} style={[selectedMod == item.name ? {paddingRight: 30, color: "black", fontSize: 14} : {paddingRight: 30, color: "gray", fontSize: 14}]}>{item.name}</TouchableOpacity>
+                    <TouchableOpacity  key={item.id} style={[selectedMod == item.name ? {paddingRight: 30, color: "black", fontSize: 14} : {paddingRight: 30, color: "gray", fontSize: 14}]} onPress={() => handleSelectMod(item.name)}>{item.name}</TouchableOpacity>
                   )}
-                />
+                />  
              
               </View>
 
               <View>
                 <FlatList
-                  data={Mods}
+                  data={Sounds}
                   horizontal
                   keyExtractor={(item) => item.id}
                   renderItem={({ item }) => (
                    <TouchableOpacity style={{marginRight: 20}}>
                     <Image
                     source={{
-                        uri: "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg"
+                        uri: item.image
                     }}
                     style={{
                         width: 180,
@@ -140,7 +175,7 @@ const index = () => {
                   )}
                 />    
                 </View>
-            </View>
+                <ReactPlayer width={"100%"} url='https://soundcloud.com/royaltyfreemeditation/transcendence-royalty-free-meditation-music?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing' />            </View>
           </View>
         </View>
       </ScrollView>
