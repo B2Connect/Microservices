@@ -23,10 +23,9 @@ const Post = () => {
   useEffect(() => {
     setSelectedSound(sounds.filter((item) => item.id == id));
     setAudio(playerRef.current.audioEl.current)
-
+    audio?.play()
   }, []);
- 
-  console.log(audio)
+  
   const trigger = () => playing ? audio?.pause() : audio?.play()
   return (
     <ScrollView
@@ -44,11 +43,13 @@ const Post = () => {
         }}
       >
         <View style={{ }}>
+            
           <Player
+          
             autoplay
             loop
             speed={0.2}
-            src={"https://assets3.lottiefiles.com/packages/lf20_gqhy4rmx.json"}
+            src={playing ? "https://assets3.lottiefiles.com/packages/lf20_gqhy4rmx.json" : ""}
             style={{
               height: "300px",
               width: "300px",
