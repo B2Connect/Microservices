@@ -1,6 +1,7 @@
 import { Player } from "@lottiefiles/react-lottie-player";
 import { useState } from "react";
 import ReactPlayer from 'react-player'
+import { useRouter } from 'next/router'
 
 import {
   FlatList,
@@ -58,6 +59,7 @@ const Sounds = [
 ]
 const index = () => {
     const [selectedMod, setSelectedMod] = useState("Recommendation");
+    const router = useRouter()
 
     const handleSelectMod = (Mod) => {
       setSelectedMod(Mod)
@@ -161,7 +163,7 @@ const index = () => {
                   horizontal
                   keyExtractor={(item) => item.id}
                   renderItem={({ item }) => (
-                   <TouchableOpacity style={{marginRight: 20}}>
+                   <TouchableOpacity style={{marginRight: 20}} onPress={() => router.push(`/meditation/${item.id}`)}>
                     <Image
                     source={{
                         uri: item.image
@@ -175,8 +177,9 @@ const index = () => {
                   )}
                 />    
                 </View>
-                <ReactPlayer width={"100%"} url='https://soundcloud.com/royaltyfreemeditation/transcendence-royalty-free-meditation-music?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing' />            </View>
           </View>
+          </View>
+
         </View>
       </ScrollView>
     </SafeAreaView>
