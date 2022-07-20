@@ -7,8 +7,8 @@ const Post = () => {
 
   return (
         <ScrollView style={{
-            background: "#D93C54",
-            background: "#D93C54",
+            background: "#0C2340",
+            background: "#0C2340",
             minHeight: "100vh"
         }}>
             <h2>This is Tamer</h2>
