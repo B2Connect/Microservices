@@ -3,24 +3,28 @@
       "id": 1,
       "name": "medetation sound",
       "image": "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg",
-      "type": "Morning"
+      "type": "Morning",
+      "cat": "Inspiration"
     },
     {
       "id": 2,
       "name": "medetation sound",
       "image": "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg",
-      "type": "Morning"
+      "type": "Morning",
+      "cat": "Inspiration"
     },
     {
       "id": 3,
       "name": "medetation sound",
       "image": "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg",
-      "type": "Morning"
+      "type": "Morning",
+      "cat": "Inspiration"
     },
     {
       "id": 4,
       "name": "medetation sound",
       "image": "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg",
-      "type": "Morning"
+      "type": "Morning",
+       "cat": "Inspiration"
     }
   ]
