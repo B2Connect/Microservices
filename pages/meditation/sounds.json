@@ -4,27 +4,31 @@
       "name": "medetation sound",
       "image": "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg",
       "type": "Morning",
-      "cat": "Inspiration"
+      "cat": "Inspiration",
+      "sound": "https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3"
     },
     {
       "id": 2,
       "name": "medetation sound",
       "image": "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg",
       "type": "Morning",
-      "cat": "Inspiration"
+      "cat": "Inspiration",
+      "sound": "https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3"
     },
     {
       "id": 3,
       "name": "medetation sound",
       "image": "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg",
       "type": "Morning",
-      "cat": "Inspiration"
+      "cat": "Inspiration",
+      "sound": "https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3"
     },
     {
       "id": 4,
       "name": "medetation sound",
       "image": "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg",
       "type": "Morning",
-       "cat": "Inspiration"
+       "cat": "Inspiration",
+       "sound": "https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3"
     }
   ]

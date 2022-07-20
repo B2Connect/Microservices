@@ -1,21 +1,28 @@
 import { useRouter } from "next/router";
 import { ScrollView, View, Image, Text } from "react-native-web";
 import { Player } from "@lottiefiles/react-lottie-player";
-import { useEffect, useState } from "react";
-import { MdOutlinePlayCircleFilled } from "react-icons/md";
-
+import { useEffect, useRef, useState } from "react";
+import { MdOutlinePlayCircleFilled, MdPauseCircleFilled } from "react-icons/md";
 const sounds = require("./sounds");
+import ReactAudioPlayer from 'react-audio-player';
+
+
+
+
+
 
 const Post = () => {
   const router = useRouter();
   const { id } = router.query;
 
   const [selectedSound, setSelectedSound] = useState({});
+  
+const playerRef = useRef("");
 
   useEffect(() => {
     setSelectedSound(sounds.filter((item) => item.id == id));
   }, []);
-  console.log(selectedSound);
+
   return (
     <ScrollView
       style={{
@@ -58,10 +65,28 @@ const Post = () => {
           />
         </View> 
         <View>
-          <MdOutlinePlayCircleFilled
-            size={70}
+        
+             <MdPauseCircleFilled 
+             size={90}
+          
+             style={{ color: "white", marginTop: "70%" }}
+           />
+       
+            <MdOutlinePlayCircleFilled
+            size={90}
+            
             style={{ color: "white", marginTop: "70%" }}
           />
+       
+          <ReactAudioPlayer
+  src="https://audio-samples.github.io/samples/mp3/blizzard_tts_unbiased/sample-0/real.mp3"
+  
+  ref={playerRef}
+  controls
+/>
+         
+              
+
         </View>
       </View>
     </ScrollView>
