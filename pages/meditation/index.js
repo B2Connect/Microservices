@@ -2,7 +2,7 @@ import { Player } from "@lottiefiles/react-lottie-player";
 import { useState } from "react";
 import ReactPlayer from 'react-player'
 import { useRouter } from 'next/router'
-
+const sounds = require('./sounds')
 import {
   FlatList,
   Image,
@@ -159,7 +159,7 @@ const index = () => {
 
               <View>
                 <FlatList
-                  data={Sounds}
+                  data={sounds}
                   horizontal
                   keyExtractor={(item) => item.id}
                   renderItem={({ item }) => (
