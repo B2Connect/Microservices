@@ -14,15 +14,20 @@ import ReactAudioPlayer from 'react-audio-player';
 const Post = () => {
   const router = useRouter();
   const { id } = router.query;
+  const playerRef = useRef();
 
   const [selectedSound, setSelectedSound] = useState({});
-  
-const playerRef = useRef("");
+  const [audio, setAudio] = useState();
+  const [playing, setPlaying] = useState(false);
 
   useEffect(() => {
     setSelectedSound(sounds.filter((item) => item.id == id));
-  }, []);
+    setAudio(playerRef.current.audioEl.current)
 
+  }, []);
+ 
+  console.log(audio)
+  const trigger = () => playing ? audio?.pause() : audio?.play()
   return (
     <ScrollView
       style={{
@@ -65,30 +70,37 @@ const playerRef = useRef("");
           />
         </View> 
         <View>
-        
-             <MdPauseCircleFilled 
-             size={90}
-          
-             style={{ color: "white", marginTop: "70%" }}
-           />
-       
-            <MdOutlinePlayCircleFilled
-            size={90}
+                {playing ? (
+                    <MdPauseCircleFilled 
+                    size={90}
+                    onClick={trigger}
+                    style={{ color: "white", marginTop: "70%" }}
+                    />
+                ) : (
+                    <MdOutlinePlayCircleFilled
+                    size={90}
+                    onClick={trigger}
+                    style={{ color: "white", marginTop: "70%" }}
+                  />
+                )}
             
-            style={{ color: "white", marginTop: "70%" }}
-          />
        
-          <ReactAudioPlayer
-  src="https://audio-samples.github.io/samples/mp3/blizzard_tts_unbiased/sample-0/real.mp3"
-  
-  ref={playerRef}
-  controls
-/>
+          
+ 
          
               
 
         </View>
       </View>
+      <ReactAudioPlayer
+  src="https://audio-samples.github.io/samples/mp3/blizzard_tts_unbiased/sample-0/real.mp3"
+  ref={playerRef}
+  controls
+  onPlay={() =>setPlaying(true)}
+  onPause={() => setPlaying(false)}
+  style={{opacity: 0}}
+
+/>
     </ScrollView>
   );
 };
