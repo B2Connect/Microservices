@@ -24,15 +24,14 @@ const Post = () => {
         minHeight: "100vh",
       }}
     >
-      <View style={{marginVertical: 20}}>
-        <Text style={{color: "white", textAlign: "center", fontSize: 16, fontWeight: 600}}>{selectedSound[0]?.cat}</Text>
-      </View>
+     
       <View
         style={{
           alignItems: "center",
+          paddingTop: 30
         }}
       >
-        <View style={{}}>
+        <View style={{ }}>
           <Player
             autoplay
             loop
