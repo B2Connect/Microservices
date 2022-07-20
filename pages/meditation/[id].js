@@ -2,6 +2,8 @@ import { useRouter } from 'next/router'
 import { ScrollView, View, Image } from 'react-native-web'
 import { Player } from "@lottiefiles/react-lottie-player";
 import { useEffect, useState } from 'react';
+import { MdOutlinePlayCircleFilled } from "react-icons/md";
+
 const sounds = require('./sounds')
 
 const Post = () => {
@@ -53,11 +55,14 @@ const Post = () => {
                         width: 150,
                         height: 150,
                         position: "absolute",
-                        top: 80,
-                        left: 75,
+                        top: 75,
+                        left: 77,
                         borderRadius: 100
                     }}
                   />
+                </View>
+                <View>
+                   <MdOutlinePlayCircleFilled size={70} style={{color: "white", marginTop: "70%"}} /> 
                 </View>
                  
             </View>
