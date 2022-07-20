@@ -5,7 +5,7 @@
       "image": "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg",
       "type": "Morning",
       "cat": "Inspiration",
-      "sound": "https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3"
+      "sound": "https://audio-samples.github.io/samples/mp3/blizzard_tts_unbiased/sample-0/real.mp3"
     },
     {
       "id": 2,
@@ -13,7 +13,8 @@
       "image": "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg",
       "type": "Morning",
       "cat": "Inspiration",
-      "sound": "https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3"
+      "sound": "https://audio-samples.github.io/samples/mp3/blizzard_tts_unbiased/sample-0/real.mp3"
+
     },
     {
       "id": 3,
@@ -21,7 +22,8 @@
       "image": "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg",
       "type": "Morning",
       "cat": "Inspiration",
-      "sound": "https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3"
+      "sound": "https://audio-samples.github.io/samples/mp3/blizzard_tts_unbiased/sample-0/real.mp3"
+
     },
     {
       "id": 4,
@@ -29,6 +31,7 @@
       "image": "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg",
       "type": "Morning",
        "cat": "Inspiration",
-       "sound": "https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3"
+       "sound": "https://audio-samples.github.io/samples/mp3/blizzard_tts_unbiased/sample-0/real.mp3"
+
     }
   ]

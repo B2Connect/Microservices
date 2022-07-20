@@ -3,7 +3,7 @@ import { ScrollView, View, Image, Text } from "react-native-web";
 import { Player } from "@lottiefiles/react-lottie-player";
 import { useEffect, useRef, useState } from "react";
 import { MdOutlinePlayCircleFilled, MdPauseCircleFilled } from "react-icons/md";
-const sounds = require("./sounds");
+const sounds = require("./sounds.json");
 import ReactAudioPlayer from 'react-audio-player';
 
 
@@ -13,19 +13,22 @@ import ReactAudioPlayer from 'react-audio-player';
 
 const Post = () => {
   const router = useRouter();
+  let playerRef = useRef();
   const { id } = router.query;
-  const playerRef = useRef();
 
   const [selectedSound, setSelectedSound] = useState({});
   const [audio, setAudio] = useState();
   const [playing, setPlaying] = useState(false);
 
+
   useEffect(() => {
+
     setSelectedSound(sounds.filter((item) => item.id == id));
     setAudio(playerRef.current.audioEl.current)
     audio?.play()
-  }, []);
-  
+  }, [id]);
+
+
   const trigger = () => playing ? audio?.pause() : audio?.play()
   return (
     <ScrollView
@@ -93,15 +96,17 @@ const Post = () => {
 
         </View>
       </View>
-      <ReactAudioPlayer
-  src="https://audio-samples.github.io/samples/mp3/blizzard_tts_unbiased/sample-0/real.mp3"
-  ref={playerRef}
-  controls
-  onPlay={() =>setPlaying(true)}
-  onPause={() => setPlaying(false)}
-  style={{opacity: 0}}
+
+ <ReactAudioPlayer
+ src={selectedSound[0]?.sound}
+ ref={playerRef}
+ controls
+ onPlay={() =>setPlaying(true)}
+ onPause={() => setPlaying(false)}
+ style={{opacity: 0}}
 
 />
+
     </ScrollView>
   );
 };
