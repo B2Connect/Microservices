@@ -111,7 +111,7 @@ const index = () => {
                         Recommended{" "}
                       </Text>
                       <Text style={{ fontSize: 20, color: "white" }}>
-                        Morning PlayList{" "}
+                        {greeting} Sound{" "}
                       </Text>
                     </View>
 
