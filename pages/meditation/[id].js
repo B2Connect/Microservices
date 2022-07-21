@@ -20,19 +20,18 @@ const Post = () => {
   const [audio, setAudio] = useState();
   const [playing, setPlaying] = useState(false);
 
-
   useEffect(() => {
 
     setSelectedSound(sounds.filter((item) => item.id == id));
     setAudio(playerRef.current.audioEl.current)
-    audio?.play()
+    audio?.play();
+  
   }, [id]);
 
 
   const trigger = () => playing ? audio?.pause() : audio?.play();
 
-
-
+ 
   return (
     <ScrollView
       style={{

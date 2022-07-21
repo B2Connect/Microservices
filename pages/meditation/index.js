@@ -1,5 +1,5 @@
 import { Player } from "@lottiefiles/react-lottie-player";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ReactPlayer from 'react-player'
 import { useRouter } from 'next/router'
 const sounds = require('./sounds')
@@ -60,29 +60,39 @@ const Sounds = [
 const index = () => {
     const [selectedMod, setSelectedMod] = useState("Recommendation");
     const router = useRouter()
+    const [greeting, setGreeting] = useState("");
 
     const handleSelectMod = (Mod) => {
       setSelectedMod(Mod)
     // console.log(Mod)
       
     }
-
+    useEffect(() => {
+      var today = new Date()
+      var curHr = today.getHours()
+    
+      if (curHr < 12) {
+        setGreeting('Morning')
+      } else if (curHr < 18) {
+        setGreeting('Afternoon')
+      } else {
+        setGreeting('Evening')
+      }
+    }, [])
   return (
     <SafeAreaView>
       <ScrollView>
         <View style={{ padding: 10 }}>
           <View>
-            <Text style={{ fontSize: 28, fontWeight: 600 }}>
-              Good
+            <Text style={{ fontSize: 32, fontWeight: 600, color: "#000000c4" }}>
+              Good 
               <br />
-              Morning
+            {greeting}
             </Text>
           </View>
 
-          <View style={{ marginTop: 50 }}>
-            <View style={{marginBottom: 15, paddingLeft: 5}}>
-              <Text>Have a greate day!</Text>
-            </View>
+          <View style={{ marginTop: 30 }}>
+           
             <View>
               <View
                 style={{
