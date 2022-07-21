@@ -34,7 +34,7 @@ const Post = () => {
 
 
   const fastforwerd = () => {
-    audio.currentTime =+ 10;
+   setAudio(audio.currentTime =+ 10);
   }
   const backWord = () => {
     audio.currentTime =+ 10;
