@@ -127,6 +127,36 @@
        "sound": "/sounds/stuckInADream.mp3"
 
 
+    },
+    {
+      "id": 14,
+      "name": "Sleep lofi",
+      "image": "/images/sleeplofi.jpg",
+      "type": "Night",
+       "cat": "Sleepy",
+       "sound": "/sounds/sleep-lofi.mp3"
+
+
+    },
+    {
+      "id": 15,
+      "name": "Motivational",
+      "image": "/images/motivational.jpg",
+      "type": "Morning",
+       "cat": "Inspirational",
+       "sound": "/sounds/motivational.mp3"
+
+
+    },
+    {
+      "id": 16,
+      "name": "Future bass",
+      "image": "/images/futurebass.jpg",
+      "type": "Afternoon",
+       "cat": "Energetic",
+       "sound": "/sounds/future-bass.mp3"
+
+
     }
     
     
