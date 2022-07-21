@@ -29,7 +29,16 @@ const Post = () => {
   }, [id]);
   // console.log(audio.currentTime+10)
 
-  const trigger = () => playing ? audio?.pause() : audio?.play()
+  const trigger = () => playing ? audio?.pause() : audio?.play();
+
+
+
+  const fastforwerd = () => {
+    audio.currentTime =+ 10;
+  }
+  const backWord = () => {
+    audio.currentTime =+ 10;
+  }
   return (
     <ScrollView
       style={{
@@ -76,7 +85,7 @@ const Post = () => {
         <View style={{display: "flex", flexDirection: "row"}}>
         <MdOutlineReplay10 
                size={40}
-               onClick={trigger}
+               onClick={backWord}
                style={{ color: "white", marginTop: "70%", marginRight: 10, alignSelf: "center" }}
         />
                 {playing ? (
@@ -95,7 +104,7 @@ const Post = () => {
           <MdForward10 
           
           size={40}
-          onClick={trigger}
+          onClick={fastforwerd}
           style={{ color: "white", marginTop: "70%", marginLeft: 10, alignSelf: "center" }}
           />
                
