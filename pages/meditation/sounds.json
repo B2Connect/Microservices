@@ -97,7 +97,38 @@
        "sound": "/sounds/space-trip-114102.mp3"
 
 
+    },
+    {
+      "id": 11,
+      "name": "Far from the city",
+      "image": "/images/far-from-city.jpg",
+      "type": "Evening",
+       "cat": "Inspirational",
+       "sound": "/sounds/far-from-the-city-114444.mp3"
+
+
+    },
+    {
+      "id": 12,
+      "name": "Aspire",
+      "image": "/images/aspire.jpg",
+      "type": "Evening",
+       "cat": "Energetic",
+       "sound": "/sounds/aspire-111789.mp3"
+
+
+    },
+    {
+      "id": 13,
+      "name": "Stuck in a dream",
+      "image": "/images/stuckInADream.jpg",
+      "type": "Evening",
+       "cat": "Energetic",
+       "sound": "/sounds/stuckInADream.mp3"
+
+
     }
+    
     
     
   ]
