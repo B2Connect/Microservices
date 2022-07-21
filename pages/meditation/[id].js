@@ -80,13 +80,13 @@ const Post = () => {
     
                 {playing ? (
                     <MdPauseCircleFilled 
-                    size={60}
+                    size={90}
                     onClick={trigger}
                     style={{ color: "white", marginTop: "70%" }}
                     />
                 ) : (
                     <MdOutlinePlayCircleFilled
-                    size={60}
+                    size={90}
                     onClick={trigger}
                     style={{ color: "white", marginTop: "70%" }}
                   />
