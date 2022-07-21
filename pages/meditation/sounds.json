@@ -6,6 +6,7 @@
       "type": "Morning",
       "cat": "Inspiration",
       "sound": "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3"
+        
     },
     {
       "id": 2,
@@ -36,5 +37,36 @@
        "sound": "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3"
 
 
+    },
+     {
+      "id": 5,
+      "name": "Unforgetable Love",
+      "image": "/images/unforgetableLove.PNG",
+      "type": "Morning",
+       "cat": "Relaxing",
+       "sound": "/sounds/unforgettable-love.mp3"
+
+
+    },
+    {
+      "id": 6,
+      "name": "Road in the forest",
+      "image": "/images/roadInTheForest.jpg",
+      "type": "Afternoon",
+       "cat": "Relaxing",
+       "sound": "/sounds/road-in-the-forest.mp3"
+
+
+    },
+    {
+      "id": 7,
+      "name": "For when it rains",
+      "image": "/images/forWhenItRains.jpg",
+      "type": "Morning",
+       "cat": "Emotional",
+       "sound": "/sounds/for-when-it-rains.mp3"
+
+
     }
+    
   ]
