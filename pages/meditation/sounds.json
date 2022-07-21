@@ -59,14 +59,35 @@
 
     },
     {
-      "id": 7,
-      "name": "For when it rains",
-      "image": "/images/forWhenItRains.jpg",
-      "type": "Morning",
-       "cat": "Emotional",
-       "sound": "/sounds/for-when-it-rains.mp3"
+      "id": 8,
+      "name": "Lost",
+      "image": "/images/lost.webp",
+      "type": "Evening",
+       "cat": "Chill",
+       "sound": "/sounds/lost.mp3"
+
+
+    },
+    {
+      "id": 9,
+      "name": "Fall asleep",
+      "image": "/images/fallAsleep.jpg",
+      "type": "Night",
+       "cat": "Sleepy",
+       "sound": "/sounds/fall-asleep.mp3"
+
+
+    },
+    {
+      "id": 10,
+      "name": "Space Trip",
+      "image": "/images/space-trip.jpg",
+      "type": "Evening",
+       "cat": "Chill",
+       "sound": "/sounds/space-trip-114102.mp3"
 
 
     }
+    
     
   ]
