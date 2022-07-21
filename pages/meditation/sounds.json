@@ -62,8 +62,8 @@
       "id": 7,
       "name": "For when it rains",
       "image": "/images/forWhenItRains.jpg",
-      "type": "Night",
-       "cat": "Sleepy",
+      "type": "Morning",
+       "cat": "Emotional",
        "sound": "/sounds/for-when-it-rains.mp3"
 
 
