@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { ScrollView, View, Image, Text } from "react-native-web";
 import { Player } from "@lottiefiles/react-lottie-player";
 import { useEffect, useRef, useState } from "react";
-import { MdOutlinePlayCircleFilled, MdPauseCircleFilled } from "react-icons/md";
+import { MdOutlinePlayCircleFilled, MdPauseCircleFilled, MdOutlineReplay10, MdForward10 } from "react-icons/md";
 const sounds = require("./sounds.json");
 import ReactAudioPlayer from 'react-audio-player';
 
@@ -27,7 +27,7 @@ const Post = () => {
     setAudio(playerRef.current.audioEl.current)
     audio?.play()
   }, [id]);
-
+  // console.log(audio.currentTime+10)
 
   const trigger = () => playing ? audio?.pause() : audio?.play()
   return (
@@ -73,27 +73,32 @@ const Post = () => {
             }}
           />
         </View> 
-        <View>
+        <View style={{display: "flex", flexDirection: "row"}}>
+        <MdOutlineReplay10 
+               size={40}
+               onClick={trigger}
+               style={{ color: "white", marginTop: "70%", marginRight: 10, alignSelf: "center" }}
+        />
                 {playing ? (
                     <MdPauseCircleFilled 
-                    size={90}
+                    size={60}
                     onClick={trigger}
                     style={{ color: "white", marginTop: "70%" }}
                     />
                 ) : (
                     <MdOutlinePlayCircleFilled
-                    size={90}
+                    size={60}
                     onClick={trigger}
                     style={{ color: "white", marginTop: "70%" }}
                   />
                 )}
-            
-       
+          <MdForward10 
           
- 
-         
-              
-
+          size={40}
+          onClick={trigger}
+          style={{ color: "white", marginTop: "70%", marginLeft: 10, alignSelf: "center" }}
+          />
+               
         </View>
       </View>
 
