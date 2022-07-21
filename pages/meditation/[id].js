@@ -27,19 +27,12 @@ const Post = () => {
     setAudio(playerRef.current.audioEl.current)
     audio?.play()
   }, [id]);
-  // console.log(audio.currentTime+10)
+
 
   const trigger = () => playing ? audio?.pause() : audio?.play();
 
 
 
-  const fastforwerd = () => {
-    console.log(audio.currentTime);
-   setAudio(audio.currentTime + 10);
-  }
-  const backWord = () => {
-    audio.currentTime =+ 10;
-  }
   return (
     <ScrollView
       style={{
@@ -84,11 +77,7 @@ const Post = () => {
           />
         </View> 
         <View style={{display: "flex", flexDirection: "row"}}>
-        <MdOutlineReplay10 
-               size={40}
-               onClick={backWord}
-               style={{ color: "white", marginTop: "70%", marginRight: 10, alignSelf: "center" }}
-        />
+    
                 {playing ? (
                     <MdPauseCircleFilled 
                     size={60}
@@ -102,12 +91,6 @@ const Post = () => {
                     style={{ color: "white", marginTop: "70%" }}
                   />
                 )}
-          <MdForward10 
-          
-          size={40}
-          onClick={fastforwerd}
-          style={{ color: "white", marginTop: "70%", marginLeft: 10, alignSelf: "center" }}
-          />
                
         </View>
       </View>
