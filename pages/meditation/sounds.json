@@ -59,6 +59,16 @@
 
     },
     {
+      "id": 7,
+      "name": "For when it rains",
+      "image": "/images/forWhenItRains.jpg",
+      "type": "Night",
+       "cat": "Sleepy",
+       "sound": "/sounds/for-when-it-rains.mp3"
+
+
+    },
+    {
       "id": 8,
       "name": "Lost",
       "image": "/images/lost.webp",
