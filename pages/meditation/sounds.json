@@ -1,45 +1,6 @@
 [
-    {
-      "id": 1,
-      "name": "medetation sound",
-      "image": "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg",
-      "type": "Morning",
-      "cat": "Inspiration",
-      "sound": "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3"
-        
-    },
-    {
-      "id": 2,
-      "name": "medetation sound",
-      "image": "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg",
-      "type": "Morning",
-      "cat": "Inspiration",
-      "sound": "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3"
-
-
-    },
-    {
-      "id": 3,
-      "name": "medetation sound",
-      "image": "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg",
-      "type": "Morning",
-      "cat": "Inspiration",
-      "sound": "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3"
-
-
-    },
-    {
-      "id": 4,
-      "name": "medetation sound",
-      "image": "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg",
-      "type": "Morning",
-       "cat": "Inspiration",
-       "sound": "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3"
-
-
-    },
      {
-      "id": 5,
+      "id": 1,
       "name": "Unforgetable Love",
       "image": "/images/unforgetableLove.PNG",
       "type": "Morning",
@@ -49,7 +10,7 @@
 
     },
     {
-      "id": 6,
+      "id": 2,
       "name": "Road in the forest",
       "image": "/images/roadInTheForest.jpg",
       "type": "Afternoon",
@@ -59,7 +20,7 @@
 
     },
     {
-      "id": 7,
+      "id": 3,
       "name": "For when it rains",
       "image": "/images/forWhenItRains.jpg",
       "type": "Morning",
@@ -69,7 +30,7 @@
 
     },
     {
-      "id": 8,
+      "id": 4,
       "name": "Lost",
       "image": "/images/lost.webp",
       "type": "Evening",
@@ -79,7 +40,7 @@
 
     },
     {
-      "id": 9,
+      "id": 5,
       "name": "Fall asleep",
       "image": "/images/fallAsleep.jpg",
       "type": "Night",
@@ -89,7 +50,7 @@
 
     },
     {
-      "id": 10,
+      "id": 6,
       "name": "Space Trip",
       "image": "/images/space-trip.jpg",
       "type": "Evening",
@@ -99,7 +60,7 @@
 
     },
     {
-      "id": 11,
+      "id": 7,
       "name": "Far from the city",
       "image": "/images/far-from-city.jpg",
       "type": "Evening",
@@ -109,7 +70,7 @@
 
     },
     {
-      "id": 12,
+      "id": 8,
       "name": "Aspire",
       "image": "/images/aspire.jpg",
       "type": "Evening",
@@ -119,7 +80,7 @@
 
     },
     {
-      "id": 13,
+      "id": 9,
       "name": "Stuck in a dream",
       "image": "/images/stuckInADream.jpg",
       "type": "Evening",
@@ -129,7 +90,7 @@
 
     },
     {
-      "id": 14,
+      "id": 10,
       "name": "Sleep lofi",
       "image": "/images/sleeplofi.jpg",
       "type": "Night",
@@ -139,7 +100,7 @@
 
     },
     {
-      "id": 15,
+      "id": 11,
       "name": "Motivational",
       "image": "/images/motivational.jpg",
       "type": "Morning",
@@ -149,7 +110,7 @@
 
     },
     {
-      "id": 16,
+      "id": 12,
       "name": "Future bass",
       "image": "/images/futurebass.jpg",
       "type": "Afternoon",
