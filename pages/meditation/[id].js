@@ -94,7 +94,7 @@ const Post = () => {
         </View>
       </View>
 
- <ReactAudioPlayer
+ <ReactAudioPlayer 
  src={selectedSound[0]?.sound}
  ref={playerRef}
  controls

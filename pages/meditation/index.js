@@ -61,11 +61,12 @@ const index = () => {
     const [selectedMod, setSelectedMod] = useState("Recommendation");
     const router = useRouter()
     const [greeting, setGreeting] = useState("");
-
+    const [filtredSounds, setFiltredSounds] = useState([])
     const handleSelectMod = (Mod) => {
       setSelectedMod(Mod)
     // console.log(Mod)
-      
+    // setFiltredSounds()
+    // console.log(sounds.filter(item => item.cat == Mod ))
     }
     useEffect(() => {
       var today = new Date()
