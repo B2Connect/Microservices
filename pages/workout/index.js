@@ -39,9 +39,19 @@ const index = () => {
     }
     if(e.target.id.includes("Hamstrings")) {
       router.push('/workout/hamstrings')
-    } 
+    }
+    if(e.target.id.includes("Calves")) {
+      router.push('/workout/calves')
+    }  
+    if(e.target.id.includes("Forearms")) {
+      router.push('/workout/forearms')
+    }
     
-    console.log(e.target.id)
+    
+    
+  }
+  const handleFullWorkout = () => {
+    router.push('/workout/full')
   }
   return (
     <main>
@@ -62,8 +72,8 @@ const index = () => {
           <Text>OR</Text>
         </View>
         <View style={{marginVertical: 20}}>
-          <Button color="#e0457c" title="Full body workout" />
-          <Link href={"/workout/dips"} >Test</Link>
+          <Button color="#e0457c" title="Full body workout" onPress={handleFullWorkout} />
+
         </View>
         </div>
       

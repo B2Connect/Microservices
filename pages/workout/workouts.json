@@ -225,10 +225,242 @@
     },
     {
         "id": 28,
-        "idenfire": "Hamstrings",
+        "idenfire": "hamstrings",
         "title": "Single Legged Romanian Deadlifts",
         "difficulty": "Beginner",
         "instructions": ["Stand with your feet shoulder-width apart and knees slightly bent and raise one leg.", "Without changing the bend in your knee, bend at your hips, and lower your torso until it's almost parallel to the floor.", "Tense your glutes and then bring yourself back to the starting position."],
         "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-single-leg-romainian-deadlift-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-single-leg-romainian-deadlift-side.gif"]
+    },
+    {
+        "id": 29,
+        "idenfire": "hamstrings",
+        "title": "Kickbacks",
+        "difficulty": "Beginner",
+        "instructions": ["Get down on all fours and position your hands under your shoulders and your knees under your hips.", "Kick back with one leg and squeeze your glutes.", "Slowly return to starting position by bending your knee and lowering your leg.", "Switch Legs. Repeat."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-glutekickback-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-glutekickback-side.gif"]
+    },
+    {
+        "id": 30,
+        "idenfire": "hamstrings",
+        "title": "Nordic Hamstring Curl",
+        "difficulty": "Advanced",
+        "instructions": ["Go to your knees and ask someone to hold your ankles", "Put your hands in front of you", "With a slight bend in your knees slowly bring your body to the ground (slower is better)", "Push up and reset to the starting position."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-noridchamstringcurl-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-noridchamstringcurl-side.gif"]
+    },
+    {
+        "id": 31,
+        "idenfire": "calves",
+        "title": "Walking Calf Raises",
+        "difficulty": "Beginner",
+        "instructions": ["Walk forward and push your toe into the ground", "Lift you heel off the ground each step and tense your calf muscle", "Repeat on each leg and walk forward slowly"],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-calveraisewalk-side.gif", "https://musclewiki.com/media/uploads/bodyweight-male-calveraisewalk-front.gif"]
+    },
+    {
+        "id": 32,
+        "idenfire": "calves",
+        "title": "Tip Toe Walking",
+        "difficulty": "Beginner",
+        "instructions": ["Point your toes into the floor.", "Slowly walk forwards and backward", "Keep your heels in the air as long as possible while walking.", "It may be beneficial to do this last at the end of your workout."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-tiptoewalk-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-tiptoewalk-side.gif"]
+    },
+    {
+        "id": 33,
+        "idenfire": "calves",
+        "title": "Calf Raises",
+        "difficulty": "Beginner",
+        "instructions": ["Balance on the balls of your feet on the platform or plates, leaning forward to use the wall to assist with balance.", "Lower the heels of your feet towards the ground and pause, then push through the balls of your feet like you are standing tip toe, pausing at the apex of the motion.", "Repeat as necessary."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-calveraise-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-calveraise-side.gif"]
+    },
+    {
+        "id": 34,
+        "idenfire": "forearms",
+        "title": "Chin Ups",
+        "difficulty": "Intermediate",
+        "instructions": ["Grab the bar shoulder width apart with a supinated grip (palms facing you)", "With your body hanging and arms fully extended, pull yourself up until your chin is past the bar.", "Slowly return to starting position. Repeat."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-chinup-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-chinup-side.gif"]
+    },
+    {
+        "id": 35,
+        "idenfire": "forearms",
+        "title": "Inverted Row",
+        "difficulty": "Beginner",
+        "instructions": ["Lay underneath a fixed horizontal bar and grab the bar with a wide overhand grip.", "Pull your body straight up to the bar.", "Return to the starting position, your arms fully extended. Repeat."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-reverse-row-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-reverse-row-side.gif"]
+    },
+    {
+        "id": 36,
+        "idenfire": "full",
+        "title": "Dips",
+        "difficulty": "Intermediate",
+        "instructions": ["Hold your body with arms locked above the equipment", "Lower your body slowly while leaning forward, flare out your elbows", "Raise your body above the bars until your arms are locked."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-dips-front_5pJM6Vh.gif", "https://musclewiki.com/media/uploads/bodyweight-male-dips-side_5HAGnjr.gif"]
+    },
+    {
+        "id": 37,
+        "idenfire": "full",
+        "title": "Push Up",
+        "difficulty": "Beginner",
+        "instructions": ["Place your hands firmly on the ground, directly under shoulders.", "Flatten your back so your entire body is straight and slowly lower your body", "Draw shoulder blades back and down, keeping elbows tucked close to your body", "Exhale as you push back to the starting position."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-pushup-front_jOCMyoK.gif", "https://musclewiki.com/media/uploads/bodyweight-male-pushup-side_eeaJGyM.gif"]
+    },
+    {
+        "id": 38,
+        "idenfire": "full",
+        "title": "Crunches",
+        "difficulty": "Beginner",
+        "instructions": ["Lay flat on your back with your knees bent and your feet flat on the ground, about a foot from your lower back.", "Place your fingertips on your temples with your palms facing out.", "Draw your belly into the base of your spine to engage the muscles, then raise your head and shoulders off the floor. Return to starting position and repeat."],
+        "gif": ["https://musclewiki.com/media/uploads/Crunch-Front-021316.gif", "https://musclewiki.com/media/uploads/Crunch-Side-021316.gif"]
+    },
+    {
+        "id": 39,
+        "idenfire": "full",
+        "title": "Laying Leg Raises",
+        "difficulty": "Beginner",
+        "instructions": ["Lay on your back with your arms palms down on either side.", "Keep your legs together and as straight as possible.", "Slowly raise your legs to a 90° angle, pause at this position, or as high as you can reach your legs, and then slowly lower your legs back down.", "Duration of these movements should be slow so that you do not utilize momentum, enabling you to get the most out of the exercise."],
+        "gif": ["https://musclewiki.com/media/uploads/LegRaises-Front-021316.gif", "https://musclewiki.com/media/uploads/LegRaises-Side-021316.gif"]
+    },
+    {
+        "id": 40,
+        "idenfire": "full",
+        "title": "Chin Ups",
+        "difficulty": "Intermediate",
+        "instructions": ["Grab the bar shoulder width apart with a supinated grip (palms facing you)", "With your body hanging and arms fully extended, pull yourself up until your chin is past the bar.", "Slowly return to starting position. Repeat."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-chinup-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-chinup-side.gif"]
+    },
+    {
+        "id": 41,
+        "idenfire": "full",
+        "title": "Inverted Row",
+        "difficulty": "Beginner",
+        "instructions": ["Lay underneath a fixed horizontal bar and grab the bar with a wide overhand grip.", "Pull your body straight up to the bar.", "Return to the starting position, your arms fully extended. Repeat."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-reverse-row-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-reverse-row-side.gif"]
+    },
+    {
+        "id": 42,
+        "idenfire": "full",
+        "title": "Elevated Pike Press",
+        "difficulty": "Intermediate",
+        "instructions": ["Use a bench or an object to elevate your feet.", "Lower your head towards the floor by bending your elbows", "Push through your hands and return to the starting pike position.", "Repeat"],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-pikepushup-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-pikepushup-side.gif"]
+    },
+    {
+        "id": 43,
+        "idenfire": "full",
+        "title": "Decline Push Up",
+        "difficulty": "Beginner",
+        "instructions": ["Use a bench to elevate your feet.", "Put your hands slightly wider than shoulder-width.", "Slowly lower your body until your chest almost touches the ground", "Raise your body until you almost lock your elbows."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-feet-elevated-push-up-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-feet-elevated-push-up-side.gif"]
+    },
+    {
+        "id": 44,
+        "idenfire": "full",
+        "title": "Forward Lunges",
+        "difficulty": "Beginner",
+        "instructions": ["Step forward with one leg.", "Lower your body until your rear knee nearly touches the ground.", "Ensure you remain upright, and your front knee stay above the front foot.", "Push off the floor with your front foot until you return to the starting position. Switch legs."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-frontlunge-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-frontlunge-side.gif"]
+    },
+    {
+        "id": 45,
+        "idenfire": "full",
+        "title": "Jump Squats",
+        "difficulty": "Beginner",
+        "instructions": ["Stand with your feet shoulder-width apart.", "Start by doing a regular squat, then engage your core and jump up explosively.", "When you land, lower your body back into the squat position."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-jump-squats-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-jump-squats-side.gif"]
+    },
+    {
+        "id": 46,
+        "idenfire": "full",
+        "title": "Pull Ups",
+        "difficulty": "Intermediate",
+        "instructions": ["Grasp the bar with an overhand grip, arms and shoulders fully extended.", "Pull your body up until your chin is above the bar.", "Lower your body back to starting position."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-pullup-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-pullup-side.gif"]
+    },
+    {
+        "id": 47,
+        "idenfire": "full",
+        "title": "Elevated Pike Press",
+        "difficulty": "Intermediate",
+        "instructions": ["Use a bench or an object to elevate your feet.", "Lower your head towards the floor by bending your elbows", "Push through your hands and return to the starting pike position."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-pikepushup-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-pikepushup-side.gif"]
+    },
+    {
+        "id": 48,
+        "idenfire": "full",
+        "title": "Dips",
+        "difficulty": "Intermediate",
+        "instructions": ["Hold your body with arms locked above the equipment", "Lower your body slowly while leaning forward, flare out your elbows", "Raise your body above the bars until your arms are locked."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-dips-front_5pJM6Vh.gif", "https://musclewiki.com/media/uploads/bodyweight-male-dips-side_5HAGnjr.gif"]
+    },
+    {
+        "id": 49,
+        "idenfire": "full",
+        "title": "Push Up",
+        "difficulty": "Beginner",
+        "instructions": ["Place your hands firmly on the ground, directly under shoulders.", "Flatten your back so your entire body is straight and slowly lower your body", "Draw shoulder blades back and down, keeping elbows tucked close to your body", "Exhale as you push back to the starting position."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-pushup-front_jOCMyoK.gif", "https://musclewiki.com/media/uploads/bodyweight-male-pushup-side_eeaJGyM.gif"]
+    }, 
+    {
+        "id": 50,
+        "idenfire": "full",
+        "title": "Kickbacks",
+        "difficulty": "Beginner",
+        "instructions": ["Get down on all fours and position your hands under your shoulders and your knees under your hips.", "Kick back with one leg and squeeze your glutes.", "Slowly return to starting position by bending your knee and lowering your leg.", "Switch Legs. Repeat."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-glutekickback-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-glutekickback-side.gif"]
+    },
+    {
+        "id": 51,
+        "idenfire": "full",
+        "title": "Nordic Hamstring Curl",
+        "difficulty": "Advanced",
+        "instructions": ["Go to your knees and ask someone to hold your ankles", "Put your hands in front of you", "With a slight bend in your knees slowly bring your body to the ground (slower is better)", "Push up and reset to the starting position."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-noridchamstringcurl-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-noridchamstringcurl-side.gif"]
+    },
+    {
+        "id": 52,
+        "idenfire": "full",
+        "title": "Bodyweight Squat",
+        "difficulty": "Beginner",
+        "instructions": ["Stand with your feet shoulder width apart.", "flex your knees and hips and sit back into the squat while lowering your body", "Continue down to full depth", "Return to starting position."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-squat-front_XJQpfzY.gif", "https://musclewiki.com/media/uploads/bodyweight-male-squat-side_XoF9WXx.gif"]
+    },
+    {
+        "id": 53,
+        "idenfire": "full",
+        "title": "Glute Bridge",
+        "difficulty": "Beginner",
+        "instructions": ["Lie down with your knees bent and your feet flat on the floor.", "Push your hips up so that your butt is elevated and your back straight.", "Tense your glutes and raise your hips towards the ceiling.", "Once you are at the highest point you can manage, hold the position for a few seconds, and then slowly return to the starting position"],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-glutebridge-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-glutebridge-side.gif"]
+    },
+    {
+        "id": 54,
+        "idenfire": "full",
+        "title": "Kickbacks",
+        "difficulty": "Beginner",
+        "instructions": ["Get down on all fours and position your hands under your shoulders and your knees under your hips.", "Kick back with one leg and squeeze your glutes.", "Slowly return to starting position by bending your knee and lowering your leg.", "Switch Legs. Repeat."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-glutekickback-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-glutekickback-side.gif"]
+    },
+    {
+        "id": 55,
+        "idenfire": "full",
+        "title": "Nordic Hamstring Curl",
+        "difficulty": "Advanced",
+        "instructions": ["Go to your knees and ask someone to hold your ankles", "Put your hands in front of you", "With a slight bend in your knees slowly bring your body to the ground (slower is better)", "Push up and reset to the starting position."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-noridchamstringcurl-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-noridchamstringcurl-side.gif"]
+    },
+    {
+        "id": 56,
+        "idenfire": "full",
+        "title": "Walking Calf Raises",
+        "difficulty": "Beginner",
+        "instructions": ["Walk forward and push your toe into the ground", "Lift you heel off the ground each step and tense your calf muscle", "Repeat on each leg and walk forward slowly"],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-calveraisewalk-side.gif", "https://musclewiki.com/media/uploads/bodyweight-male-calveraisewalk-front.gif"]
+    },
+    {
+        "id": 57,
+        "idenfire": "full",
+        "title": "Tip Toe Walking",
+        "difficulty": "Beginner",
+        "instructions": ["Point your toes into the floor.", "Slowly walk forwards and backward", "Keep your heels in the air as long as possible while walking.", "It may be beneficial to do this last at the end of your workout."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-tiptoewalk-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-tiptoewalk-side.gif"]
     }
 ]
