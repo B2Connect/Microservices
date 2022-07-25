@@ -25,7 +25,22 @@ const index = () => {
     if(e.target.id.includes("Quads")) {
       router.push('/workout/quads')
     }   
-   
+    if(e.target.id.includes("Trapezius")) {
+      router.push('/workout/trapezius')
+    }
+    if(e.target.id.includes("Triceps")) {
+      router.push('/workout/triceps')
+    } 
+    if(e.target.id.includes("Glutes")) {
+      router.push('/workout/glutes')
+    } 
+    if(e.target.id.includes("Lats")) {
+      router.push('/workout/lats')
+    }
+    if(e.target.id.includes("Hamstrings")) {
+      router.push('/workout/hamstrings')
+    } 
+    
     console.log(e.target.id)
   }
   return (

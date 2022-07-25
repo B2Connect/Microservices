@@ -120,13 +120,115 @@
         "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-jump-squats-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-jump-squats-side.gif"]
     },
     {
-        "id": 14,
+        "id": 15,
         "idenfire": "quads",
         "title": "Bulgarian Split Squat",
         "difficulty": "Beginner",
         "instructions": ["Stand with your back to a bench (or raised surface) and place one of your feet on the bench.", "Squat down until your front leg is about parallel to the floor.", "Go back to the starting position. After completing the desired amount of reps, switch legs and repeat."],
         "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-bulgariansplitsquat-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-bulgariansplitsquat-side.gif"]
+    },
+    {
+        "id": 16,
+        "idenfire": "trapezius",
+        "title": "Pull Ups",
+        "difficulty": "Intermediate",
+        "instructions": ["Grasp the bar with an overhand grip, arms and shoulders fully extended.", "Pull your body up until your chin is above the bar.", "Lower your body back to starting position."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-pullup-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-pullup-side.gif"]
+    },
+    {
+        "id": 17,
+        "idenfire": "trapezius",
+        "title": "Elevated Pike Press",
+        "difficulty": "Intermediate",
+        "instructions": ["Use a bench or an object to elevate your feet.", "Lower your head towards the floor by bending your elbows", "Push through your hands and return to the starting pike position."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-pikepushup-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-pikepushup-side.gif"]
+    },
+    {
+        "id": 18,
+        "idenfire": "triceps",
+        "title": "Dips",
+        "difficulty": "Intermediate",
+        "instructions": ["Hold your body with arms locked above the equipment", "Lower your body slowly while leaning forward, flare out your elbows", "Raise your body above the bars until your arms are locked."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-dips-front_5pJM6Vh.gif", "https://musclewiki.com/media/uploads/bodyweight-male-dips-side_5HAGnjr.gif"]
+    },
+    {
+        "id": 19,
+        "idenfire": "triceps",
+        "title": "Push Up",
+        "difficulty": "Beginner",
+        "instructions": ["Place your hands firmly on the ground, directly under shoulders.", "Flatten your back so your entire body is straight and slowly lower your body", "Draw shoulder blades back and down, keeping elbows tucked close to your body", "Exhale as you push back to the starting position."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-pushup-front_jOCMyoK.gif", "https://musclewiki.com/media/uploads/bodyweight-male-pushup-side_eeaJGyM.gif"]
+    }, 
+    {
+        "id": 20,
+        "idenfire": "triceps",
+        "title": "Elevated Pike Press",
+        "difficulty": "Intermediate",
+        "instructions": ["Use a bench or an object to elevate your feet.", "Lower your head towards the floor by bending your elbows", "Push through your hands and return to the starting pike position."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-pikepushup-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-pikepushup-side.gif"]
+    }, 
+    {
+        "id": 21,
+        "idenfire": "triceps",
+        "title": "Bodyweight Chest Dips",
+        "difficulty": "Intermediate",
+        "instructions": ["Grip the edge of the bench with your hands, Keep your feet together and legs straight.", "Lower your body straight down.", "Slowly press back up to the starting point."],
+        "gif": ["https://musclewiki.com/media/uploads/male-bench-tricep-dip-front_3xfJOT4.gif", "https://musclewiki.com/media/uploads/male-bench-tricep-dip-side_KUEYZFi.gif"]
+    },
+    {
+        "id": 22,
+        "idenfire": "lats",
+        "title": "Single Legged Romanian Deadlifts",
+        "difficulty": "Beginner",
+        "instructions": ["Stand with your feet shoulder-width apart and knees slightly bent and raise one leg.", "Without changing the bend in your knee, bend at your hips, and lower your torso until it's almost parallel to the floor.", "Tense your glutes and then bring yourself back to the starting position."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-single-leg-romainian-deadlift-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-single-leg-romainian-deadlift-side.gif"]
+    },
+    {
+        "id": 23,
+        "idenfire": "lats",
+        "title": "Kickbacks",
+        "difficulty": "Beginner",
+        "instructions": ["Get down on all fours and position your hands under your shoulders and your knees under your hips.", "Kick back with one leg and squeeze your glutes.", "Slowly return to starting position by bending your knee and lowering your leg.", "Switch Legs. Repeat."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-glutekickback-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-glutekickback-side.gif"]
+    },
+    {
+        "id": 24,
+        "idenfire": "lats",
+        "title": "Nordic Hamstring Curl",
+        "difficulty": "Advanced",
+        "instructions": ["Go to your knees and ask someone to hold your ankles", "Put your hands in front of you", "With a slight bend in your knees slowly bring your body to the ground (slower is better)", "Push up and reset to the starting position."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-noridchamstringcurl-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-noridchamstringcurl-side.gif"]
+    },
+    {
+        "id": 25,
+        "idenfire": "glutes",
+        "title": "Bodyweight Squat",
+        "difficulty": "Beginner",
+        "instructions": ["Stand with your feet shoulder width apart.", "flex your knees and hips and sit back into the squat while lowering your body", "Continue down to full depth", "Return to starting position."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-squat-front_XJQpfzY.gif", "https://musclewiki.com/media/uploads/bodyweight-male-squat-side_XoF9WXx.gif"]
+    },
+    {
+        "id": 26,
+        "idenfire": "glutes",
+        "title": "Glute Bridge",
+        "difficulty": "Beginner",
+        "instructions": ["Lie down with your knees bent and your feet flat on the floor.", "Push your hips up so that your butt is elevated and your back straight.", "Tense your glutes and raise your hips towards the ceiling.", "Once you are at the highest point you can manage, hold the position for a few seconds, and then slowly return to the starting position"],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-glutebridge-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-glutebridge-side.gif"]
+    },
+    {
+        "id": 27,
+        "idenfire": "glutes",
+        "title": "Forward Lunges",
+        "difficulty": "Beginner",
+        "instructions": ["Step forward with one leg.", "Lower your body until your rear knee nearly touches the ground.", "Ensure you remain upright, and your front knee stay above the front foot.", "Push off the floor with your front foot until you return to the starting position. Switch legs."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-frontlunge-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-frontlunge-side.gif"]
+    },
+    {
+        "id": 28,
+        "idenfire": "Hamstrings",
+        "title": "Single Legged Romanian Deadlifts",
+        "difficulty": "Beginner",
+        "instructions": ["Stand with your feet shoulder-width apart and knees slightly bent and raise one leg.", "Without changing the bend in your knee, bend at your hips, and lower your torso until it's almost parallel to the floor.", "Tense your glutes and then bring yourself back to the starting position."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-single-leg-romainian-deadlift-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-single-leg-romainian-deadlift-side.gif"]
     }
-  
-
 ]
