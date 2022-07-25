@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "idenfire": "dips",
+        "title": "Dips",
+        "difficulty": "Intermediate",
+        "instructions": ["Hold your body with arms locked above the equipment", "Lower your body slowly while leaning forward, flare out your elbows", "Raise your body above the bars until your arms are locked."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-dips-front_5pJM6Vh.gif", "https://musclewiki.com/media/uploads/bodyweight-male-dips-side_5HAGnjr.gif"]
+    },
+    {
+        "id": 2,
+        "idenfire": "dips",
+        "title": "Dip 33",
+        "difficulty": "Intermediate",
+        "instructions": ["Hold your body with arms locked above the equipment", "Lower your body slowly while leaning forward, flare out your elbows", "Raise your body above the bars until your arms are locked."],
+        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-dips-front_5pJM6Vh.gif", "https://musclewiki.com/media/uploads/bodyweight-male-dips-side_5HAGnjr.gif"]
+    }
+]
