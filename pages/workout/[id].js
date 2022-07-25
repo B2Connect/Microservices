@@ -43,7 +43,7 @@ const workout = () => {
                                     source={{
                                         uri: item
                                     }}
-                                    style={{width: 300, height: 300}}
+                                    style={{width: 300, height: 300, borderRadius: 20}}
                                     />
                                         </View>
                                   
@@ -54,7 +54,7 @@ const workout = () => {
                                
                                     <ol type="1" style={{padding: 5, width: "150vw"}}>
                                     {item?.instructions?.map(item => (
-                                    <li style={{background: "#ececec", margin: "10px 0"}}>{item}</li>
+                                    <li style={{background: "#ececec", margin: "10px 0", borderRadius: 20, padding: "5px 10px"}}>{item}</li>
                                     ))}
                                   </ol>  
                                   
