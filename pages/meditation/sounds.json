@@ -11,21 +11,11 @@
     },
     {
       "id": 2,
-<<<<<<< HEAD
-      "name": "medetation sound",
-      "image": "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg",
-      "type": "Morning",
-      "cat": "Inspiration",
-      "sound": "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3"
-=======
       "name": "Road in the forest",
       "image": "/images/roadInTheForest.jpg",
       "type": "Afternoon",
        "cat": "Relaxing",
        "sound": "/sounds/road-in-the-forest.mp3"
-
-
->>>>>>> 0cd7aa400d3d8e83e5be517bada317c12db338b0
     },
     {
       "id": 3,
@@ -112,13 +102,9 @@
       "name": "Motivational",
       "image": "/images/motivational.jpg",
       "type": "Morning",
-<<<<<<< HEAD
+
        "cat": "Inspiration",
        "sound": "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3"
-=======
-       "cat": "Inspirational",
-       "sound": "/sounds/motivational.mp3"
-
 
     },
     {
@@ -128,9 +114,6 @@
       "type": "Afternoon",
        "cat": "Energetic",
        "sound": "/sounds/future-bass.mp3"
-
-
->>>>>>> 0cd7aa400d3d8e83e5be517bada317c12db338b0
     }
     
     
