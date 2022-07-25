@@ -50,14 +50,15 @@ const workout = () => {
                                 ))}
                             </View>
 
-                            <View>
-                                {item?.instructions?.map(item => (
-                                    <ol type="1">
-                                    <li>{item}</li>
-                                   
+                            <View style={{paddingHorizontal: 20, paddingVertical: 10}}>
+                               
+                                    <ol type="1" style={{padding: 5, width: "150vw"}}>
+                                    {item?.instructions?.map(item => (
+                                    <li style={{background: "#ececec", marginVertical: 10}}>{item}</li>
+                                    ))}
                                   </ol>  
                                   
-                                ))}
+                               
                             </View>
 
                         </View>
