@@ -30,10 +30,10 @@ const workout = () => {
                   {exGroup.length > 0 ? exGroup?.map(item => (
                     <View key={item.id}>
                             <View style={{marginLeft: 10}}>
-                                <Text style={{color: "#e0457c", fontWeight: 600}}>{item.title}</Text>
+                                <Text style={{color: "#e0457c", fontWeight: 600, fontSize: 22}}>{item.title}</Text>
                             </View>
                             <View style={{marginLeft: 10, paddingTop: 7, marginBottom: 10}}>
-                                <Text><span style={{color: "#000", fontWeight: 600}}>Difficulty:</span> {item.difficulty}</Text>
+                                <Text style={{fontSize: 18}}><span style={{color: "#000", fontWeight: 600, fontSize: 18}}>Difficulty:</span> {item.difficulty}</Text>
                             </View>
 
                             <View style={{display: "flex", flexDirection: "row"}}>
