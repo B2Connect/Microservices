@@ -32,13 +32,13 @@ const workout = () => {
                             <View style={{marginLeft: 10}}>
                                 <Text style={{color: "#e0457c", fontWeight: 600}}>{item.title}</Text>
                             </View>
-                            <View style={{marginLeft: 10, paddingTop: 7}}>
+                            <View style={{marginLeft: 10, paddingTop: 7, marginBottom: 10}}>
                                 <Text><span style={{color: "#000", fontWeight: 600}}>Difficulty:</span> {item.difficulty}</Text>
                             </View>
 
                             <View style={{display: "flex", flexDirection: "row"}}>
                                 {item?.gif?.map(item => (
-                                    <View style={{paddingHorizontal: 10, paddingVertical: 10}}>
+                                    <View style={{paddingHorizontal: 10, }}>
                                           <Image 
                                     source={{
                                         uri: item
@@ -54,7 +54,7 @@ const workout = () => {
                                
                                     <ol type="1" style={{padding: 5, width: "150vw"}}>
                                     {item?.instructions?.map(item => (
-                                    <li style={{background: "#ececec", marginVertical: 10}}>{item}</li>
+                                    <li style={{background: "#ececec", margin: "10px 0"}}>{item}</li>
                                     ))}
                                   </ol>  
                                   
