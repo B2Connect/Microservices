@@ -1,8 +1,16 @@
 import Link from "next/link";
 import { Button, Text, View } from "react-native-web";
 import { ReactSVG } from "react-svg";
+import { useRouter } from 'next/router'
 
 const index = () => {
+  const router = useRouter()
+
+  const handleMuscle = (e) => {
+    if(e.target.id.includes("Pectorals")) {
+      router.push('/workout/chest')
+    }  
+  }
   return (
     <main>
       <div class="muscle-groups">
@@ -15,7 +23,7 @@ const index = () => {
   <ReactSVG
           src={"/images/body.svg"}
           onClick={(e) => {
-            console.log("wrapper onClick", e.target.id);
+            handleMuscle(e)
           }}
         />
         <View style={{alignItems: "center", marginVertical: 20}}>

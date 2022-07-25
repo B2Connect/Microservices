@@ -21,7 +21,7 @@ const workout = () => {
     
         getData()
     }, [id])
-        console.log(exGroup)
+    
 
     return (
         <SafeAreaView>
