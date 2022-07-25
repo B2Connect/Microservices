@@ -1,4 +1,4 @@
-import { Text, View } from "react-native-web";
+import { Button, Text, View } from "react-native-web";
 import { ReactSVG } from "react-svg";
 
 const index = () => {
@@ -17,6 +17,12 @@ const index = () => {
             console.log("wrapper onClick", e.target.id);
           }}
         />
+        <View style={{alignItems: "center", marginVertical: 20}}>
+          <Text>OR</Text>
+        </View>
+        <View style={{marginVertical: 20}}>
+          <Button color="#e0457c" title="Full body workout" />
+        </View>
         </div>
       
       </div>
