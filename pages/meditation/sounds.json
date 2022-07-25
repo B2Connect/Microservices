@@ -1,36 +1,138 @@
 [
-    {
+     {
       "id": 1,
-      "name": "medetation sound",
-      "image": "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg",
+      "name": "Unforgetable Love",
+      "image": "/images/unforgetableLove.PNG",
       "type": "Morning",
-      "cat": "Inspiration",
-      "sound": "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3"
+       "cat": "Relaxing",
+       "sound": "/sounds/unforgettable-love.mp3"
+
+
     },
     {
       "id": 2,
+<<<<<<< HEAD
       "name": "medetation sound",
       "image": "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg",
       "type": "Morning",
       "cat": "Inspiration",
       "sound": "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3"
+=======
+      "name": "Road in the forest",
+      "image": "/images/roadInTheForest.jpg",
+      "type": "Afternoon",
+       "cat": "Relaxing",
+       "sound": "/sounds/road-in-the-forest.mp3"
+
+
+>>>>>>> 0cd7aa400d3d8e83e5be517bada317c12db338b0
     },
     {
       "id": 3,
-      "name": "medetation sound",
-      "image": "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg",
+      "name": "For when it rains",
+      "image": "/images/forWhenItRains.jpg",
       "type": "Morning",
-      "cat": "Inspiration",
-      "sound": "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3"
+       "cat": "Emotional",
+       "sound": "/sounds/for-when-it-rains.mp3"
 
 
     },
     {
       "id": 4,
-      "name": "medetation sound",
-      "image": "https://cdn.pixabay.com/audio/2022/05/27/23-51-43-941_200x200.jpg",
+      "name": "Lost",
+      "image": "/images/lost.webp",
+      "type": "Evening",
+       "cat": "Chill",
+       "sound": "/sounds/lost.mp3"
+
+
+    },
+    {
+      "id": 5,
+      "name": "Fall asleep",
+      "image": "/images/fallAsleep.jpg",
+      "type": "Night",
+       "cat": "Sleepy",
+       "sound": "/sounds/fall-asleep.mp3"
+
+
+    },
+    {
+      "id": 6,
+      "name": "Space Trip",
+      "image": "/images/space-trip.jpg",
+      "type": "Evening",
+       "cat": "Chill",
+       "sound": "/sounds/space-trip-114102.mp3"
+
+
+    },
+    {
+      "id": 7,
+      "name": "Far from the city",
+      "image": "/images/far-from-city.jpg",
+      "type": "Evening",
+       "cat": "Inspirational",
+       "sound": "/sounds/far-from-the-city-114444.mp3"
+
+
+    },
+    {
+      "id": 8,
+      "name": "Aspire",
+      "image": "/images/aspire.jpg",
+      "type": "Evening",
+       "cat": "Energetic",
+       "sound": "/sounds/aspire-111789.mp3"
+
+
+    },
+    {
+      "id": 9,
+      "name": "Stuck in a dream",
+      "image": "/images/stuckInADream.jpg",
+      "type": "Evening",
+       "cat": "Energetic",
+       "sound": "/sounds/stuckInADream.mp3"
+
+
+    },
+    {
+      "id": 10,
+      "name": "Sleep lofi",
+      "image": "/images/sleeplofi.jpg",
+      "type": "Night",
+       "cat": "Sleepy",
+       "sound": "/sounds/sleep-lofi.mp3"
+
+
+    },
+    {
+      "id": 11,
+      "name": "Motivational",
+      "image": "/images/motivational.jpg",
       "type": "Morning",
+<<<<<<< HEAD
        "cat": "Inspiration",
        "sound": "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3"
+=======
+       "cat": "Inspirational",
+       "sound": "/sounds/motivational.mp3"
+
+
+    },
+    {
+      "id": 12,
+      "name": "Future bass",
+      "image": "/images/futurebass.jpg",
+      "type": "Afternoon",
+       "cat": "Energetic",
+       "sound": "/sounds/future-bass.mp3"
+
+
+>>>>>>> 0cd7aa400d3d8e83e5be517bada317c12db338b0
     }
+    
+    
+    
   ]
