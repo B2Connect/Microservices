@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button, Text, View } from "react-native-web";
 import { ReactSVG } from "react-svg";
 
@@ -22,6 +23,7 @@ const index = () => {
         </View>
         <View style={{marginVertical: 20}}>
           <Button color="#e0457c" title="Full body workout" />
+          <Link href={"/workout/dips"} >Test</Link>
         </View>
         </div>
       
