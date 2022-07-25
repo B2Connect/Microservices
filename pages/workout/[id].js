@@ -26,9 +26,9 @@ const workout = () => {
     return (
         <SafeAreaView>
             <View>
-                <View >
+                <View style={{marginTop: 40}}>
                   {exGroup.length > 0 ? exGroup?.map(item => (
-                    <View key={item.id}>
+                    <View key={item.id} >
                             <View style={{marginLeft: 10}}>
                                 <Text style={{color: "#e0457c", fontWeight: 600, fontSize: 22}}>{item.title}</Text>
                             </View>
