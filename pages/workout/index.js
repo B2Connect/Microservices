@@ -10,6 +10,23 @@ const index = () => {
     if(e.target.id.includes("Pectorals")) {
       router.push('/workout/chest')
     }  
+    if(e.target.id.includes("Abs")) {
+      router.push('/workout/abs')
+    } 
+    if(e.target.id.includes("Obliques")) {
+      router.push('/workout/abs')
+    } 
+    if(e.target.id.includes("Biceps")) {
+      router.push('/workout/biceps')
+    } 
+    if(e.target.id.includes("Deltoids")) {
+      router.push('/workout/deltoids')
+    }   
+    if(e.target.id.includes("Quads")) {
+      router.push('/workout/quads')
+    }   
+   
+    console.log(e.target.id)
   }
   return (
     <main>
