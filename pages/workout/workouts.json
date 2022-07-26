@@ -5,7 +5,7 @@
         "title": "Dips",
         "difficulty": "Intermediate",
         "instructions": ["Hold your body with arms locked above the equipment", "Lower your body slowly while leaning forward, flare out your elbows", "Raise your body above the bars until your arms are locked."],
-        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-dips-front_5pJM6Vh.gif", "https://musclewiki.com/media/uploads/bodyweight-male-dips-side_5HAGnjr.gif"]
+        "gif": ["https://b2app-assets.s3.me-south-1.amazonaws.com/bodyweight-male-dips-front_5pJM6Vh+(1).gif", "https://b2app-assets.s3.me-south-1.amazonaws.com/bodyweight-male-dips-side_5HAGnjr+(1).gif"]
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "title": "Push Up",
         "difficulty": "Beginner",
         "instructions": ["Place your hands firmly on the ground, directly under shoulders.", "Flatten your back so your entire body is straight and slowly lower your body", "Draw shoulder blades back and down, keeping elbows tucked close to your body", "Exhale as you push back to the starting position."],
-        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-pushup-front_jOCMyoK.gif", "https://musclewiki.com/media/uploads/bodyweight-male-pushup-side_eeaJGyM.gif"]
+        "gif": ["https://b2app-assets.s3.me-south-1.amazonaws.com/bodyweight-male-pushup-front_jOCMyoK.gif", "https://b2app-assets.s3.me-south-1.amazonaws.com/bodyweight-male-pushup-side_eeaJGyM.gif"]
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "title": "Incline Push Up",
         "difficulty": "Beginner",
         "instructions": ["Stand facing bench or sturdy elevated platform.", "Place hands on edge of bench or platform, slightly wider than shoulder width.", "Slowly lower your body until your chest almost touches the bench.", "Push body up until arms are extended."],
-        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-incline-pushup-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-incline-pushup-side.gif"]
+        "gif": ["https://b2app-assets.s3.me-south-1.amazonaws.com/bodyweight-male-incline-pushup-front+(1).gif", "https://b2app-assets.s3.me-south-1.amazonaws.com/bodyweight-male-incline-pushup-side+(1).gif"]
     },
     {
         "id": 4,
