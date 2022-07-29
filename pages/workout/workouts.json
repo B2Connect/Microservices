@@ -29,7 +29,7 @@
         "title": "Decline Push Up",
         "difficulty": "Beginner",
         "instructions": ["Use a bench to elevate your feet.", "Put your hands slightly wider than shoulder-width.", "Slowly lower your body until your chest almost touches the ground.", "Raise your body until you almost lock your elbows."],
-        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-feet-elevated-push-up-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-feet-elevated-push-up-side.gif"]
+        "gif": ["https://b2app-assets.s3.me-south-1.amazonaws.com/bodyweight-male-feet-elevated-push-up-front.gif", "https://b2app-assets.s3.me-south-1.amazonaws.com/bodyweight-male-feet-elevated-push-up-side.gif"]
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "title": "Crunches",
         "difficulty": "Beginner",
         "instructions": ["Lay flat on your back with your knees bent and your feet flat on the ground, about a foot from your lower back.", "Place your fingertips on your temples with your palms facing out.", "Draw your belly into the base of your spine to engage the muscles, then raise your head and shoulders off the floor. Return to starting position and repeat."],
-        "gif": ["https://musclewiki.com/media/uploads/Crunch-Front-021316.gif", "https://musclewiki.com/media/uploads/Crunch-Side-021316.gif"]
+        "gif": ["https://b2app-assets.s3.me-south-1.amazonaws.com/Crunch-Front-021316.gif", "https://b2app-assets.s3.me-south-1.amazonaws.com/Crunch-Side-021316.gif"]
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "title": "Laying Leg Raises",
         "difficulty": "Beginner",
         "instructions": ["Lay on your back with your arms palms down on either side.", "Keep your legs together and as straight as possible.", "Slowly raise your legs to a 90° angle, pause at this position, or as high as you can reach your legs, and then slowly lower your legs back down.", "Duration of these movements should be slow so that you do not utilize momentum, enabling you to get the most out of the exercise."],
-        "gif": ["https://musclewiki.com/media/uploads/LegRaises-Front-021316.gif", "https://musclewiki.com/media/uploads/LegRaises-Side-021316.gif"]
+        "gif": ["https://b2app-assets.s3.me-south-1.amazonaws.com/LegRaises-Front-021316.gif", "https://b2app-assets.s3.me-south-1.amazonaws.com/LegRaises-Side-021316.gif"]
     },
     {
         "id": 7,
@@ -53,7 +53,7 @@
         "title": "Hanging Knee Raises",
         "difficulty": "Beginner",
         "instructions": ["Grab the bar and hang, your body still and your legs straight.", "Slowly draw your knees up to your chest", "Once you have raised your knees as high as possible, lower your legs and repeat. Duration of these movements should be slow so that you do not utilize momentum, enabling you to get the most out of the exercise.", "Duration of these movements should be slow so that you do not utilize momentum, enabling you to get the most out of the exercise."],
-        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-hanging-knee-raises-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-hanging-knee-raises-side.gif"]
+        "gif": ["https://b2app-assets.s3.me-south-1.amazonaws.com/bodyweight-male-hanging-knee-raises-front.gif", "https://b2app-assets.s3.me-south-1.amazonaws.com/bodyweight-male-hanging-knee-raises-side.gif"]
     },
     {
         "id": 8,
@@ -61,7 +61,7 @@
         "title": "Forearm Plank",
         "difficulty": "Beginner",
         "instructions": ["Place forearms on the ground with your elbows bent at a 90° angle aligned beneath your shoulders, with your arms parallel at shoulder-width.", "Your feet should be together, with only your toes touching the floor.", "Lift your belly off the floor and form a straight line from your heels to the crown of your head and hold."],
-        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-forearm-plant-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-forarm-plank-side.gif"]
+        "gif": ["https://b2app-assets.s3.me-south-1.amazonaws.com/bodyweight-male-forearm-plant-front.gif", "https://b2app-assets.s3.me-south-1.amazonaws.com/bodyweight-male-forarm-plank-side.gif"]
     },
     {
         "id": 9,
@@ -69,7 +69,7 @@
         "title": "Chin Ups",
         "difficulty": "Intermediate",
         "instructions": ["Grab the bar shoulder width apart with a supinated grip (palms facing you)", "With your body hanging and arms fully extended, pull yourself up until your chin is past the bar.", "Slowly return to starting position. Repeat."],
-        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-chinup-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-chinup-side.gif"]
+        "gif": ["https://b2app-assets.s3.me-south-1.amazonaws.com/bodyweight-male-chinup-front.gif", "https://b2app-assets.s3.me-south-1.amazonaws.com/bodyweight-male-chinup-side.gif"]
     },
     {
         "id": 10,
@@ -77,7 +77,7 @@
         "title": "Inverted Row",
         "difficulty": "Beginner",
         "instructions": ["Lay underneath a fixed horizontal bar and grab the bar with a wide overhand grip.", "Pull your body straight up to the bar.", "Return to the starting position, your arms fully extended. Repeat."],
-        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-reverse-row-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-reverse-row-side.gif"]
+        "gif": ["https://b2app-assets.s3.me-south-1.amazonaws.com/bodyweight-male-reverse-row-front.gif", "https://b2app-assets.s3.me-south-1.amazonaws.com/bodyweight-male-reverse-row-side.gif"]
     },
     {
         "id": 11,
@@ -85,7 +85,7 @@
         "title": "Elevated Pike Press",
         "difficulty": "Intermediate",
         "instructions": ["Use a bench or an object to elevate your feet.", "Lower your head towards the floor by bending your elbows", "Push through your hands and return to the starting pike position.", "Repeat"],
-        "gif": ["https://musclewiki.com/media/uploads/bodyweight-male-pikepushup-front.gif", "https://musclewiki.com/media/uploads/bodyweight-male-pikepushup-side.gif"]
+        "gif": ["c", "https://musclewiki.com/media/uploads/bodyweight-male-pikepushup-side.gif"]
     },
     {
         "id": 12,
