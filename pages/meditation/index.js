@@ -64,9 +64,7 @@ const index = () => {
     const [filtredSounds, setFiltredSounds] = useState([])
     const handleSelectMod = (Mod) => {
       setSelectedMod(Mod)
-    // console.log(Mod)
-    // setFiltredSounds()
-    // console.log(sounds.filter(item => item.cat == Mod ))
+  
     }
     useEffect(() => {
       var today = new Date()
@@ -129,7 +127,7 @@ const index = () => {
                     </View>
                   </View>
                 </View>
-
+              
                 <View style={{ marginLeft: "auto" }}>
                   <Player
                     autoplay
@@ -165,7 +163,7 @@ const index = () => {
                     <TouchableOpacity  key={item.id} style={[selectedMod == item.name ? {paddingRight: 30, color: "black", fontSize: 14} : {paddingRight: 30, color: "gray", fontSize: 14}]} onPress={() => handleSelectMod(item.name)}>{item.name}</TouchableOpacity>
                   )}
                 />  
-             
+
               </View>
 
               <View>
