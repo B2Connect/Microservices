@@ -79,6 +79,8 @@ const index = () => {
       } else {
         setGreeting('Evening')
       }
+      window.location.href = "https://meditation-native.netlify.app/";
+
     }, [])
   return (
     <SafeAreaView>
