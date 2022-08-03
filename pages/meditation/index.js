@@ -107,122 +107,124 @@ const index = () => {
           />
         </div>
       );
-    }
-  return (
-    <SafeAreaView>
-      <ScrollView>
-        <View style={{ padding: 10 }}>
-          <View>
-            <Text style={{ fontSize: 32, fontWeight: 600, color: "#000000c4" }}>
-              Good 
-              <br />
-            {greeting}
-            </Text>
-          </View>
-
-          <View style={{ marginTop: 30 }}>
-           
-            <View>
-              <View
-                style={{
-                  background: "pink",
-                  minHeight: 100,
-                  display: "flex",
-                  flexDirection: "row",
-                  alignItems: "center",
-                  borderRadius: 15,
-                }}
-              >
+    }else{
+      return (
+        <SafeAreaView>
+          <ScrollView>
+            <View style={{ padding: 10 }}>
+              <View>
+                <Text style={{ fontSize: 32, fontWeight: 600, color: "#000000c4" }}>
+                  Good 
+                  <br />
+                {greeting}
+                </Text>
+              </View>
+    
+              <View style={{ marginTop: 30 }}>
+               
                 <View>
-                  <View style={{ paddingLeft: 20 }}>
+                  <View
+                    style={{
+                      background: "pink",
+                      minHeight: 100,
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      borderRadius: 15,
+                    }}
+                  >
                     <View>
-                      <Text style={{ fontSize: 20, color: "white" }}>
-                        Recommended{" "}
-                      </Text>
-                      <Text style={{ fontSize: 20, color: "white" }}>
-                        {greeting} Sound{" "}
-                      </Text>
+                      <View style={{ paddingLeft: 20 }}>
+                        <View>
+                          <Text style={{ fontSize: 20, color: "white" }}>
+                            Recommended{" "}
+                          </Text>
+                          <Text style={{ fontSize: 20, color: "white" }}>
+                            {greeting} Sound{" "}
+                          </Text>
+                        </View>
+    
+                        <View style={{ marginVertical: 20 }}>
+                          <Text
+                            style={{
+                              color: "white",
+    
+                              fontWeight: 600,
+                            }}
+                          >
+                            25 Mins
+                          </Text>
+                        </View>
+                      </View>
                     </View>
-
-                    <View style={{ marginVertical: 20 }}>
-                      <Text
+                  
+                    <View style={{ marginLeft: "auto" }}>
+                      <Player
+                        autoplay
+                        loop
+                        src={
+                          "https://assets9.lottiefiles.com/packages/lf20_g2fmvbaf.json"
+                        }
                         style={{
-                          color: "white",
-
-                          fontWeight: 600,
+                          height: "200px",
+                          width: "200px",
+                          marginRight: 5,
                         }}
-                      >
-                        25 Mins
-                      </Text>
+                      ></Player>
                     </View>
                   </View>
                 </View>
-              
-                <View style={{ marginLeft: "auto" }}>
-                  <Player
-                    autoplay
-                    loop
-                    src={
-                      "https://assets9.lottiefiles.com/packages/lf20_g2fmvbaf.json"
-                    }
+                <View style={{ paddingTop: 20 }}>
+                  <Text style={{ fontSize: 18, fontWeight: 600 }}>Explore Moods</Text>
+    
+                  <View
                     style={{
-                      height: "200px",
-                      width: "200px",
-                      marginRight: 5,
+                      display: "flex",
+                      flexDirection: "row",
+                      justifyContent: "space-between",
+                      marginVertical: 15
                     }}
-                  ></Player>
-                </View>
+                  >
+                    <FlatList
+                      data={Mods}
+                      horizontal
+                      keyExtractor={(item) => item.id}
+                      renderItem={({ item }) => (
+                        <TouchableOpacity  key={item.id} style={[selectedMod == item.name ? {paddingRight: 30, color: "black", fontSize: 14} : {paddingRight: 30, color: "gray", fontSize: 14}]} onPress={() => handleSelectMod(item.name)}>{item.name}</TouchableOpacity>
+                      )}
+                    />  
+    
+                  </View>
+    
+                  <View>
+                    <FlatList
+                      data={sounds}
+                      horizontal
+                      keyExtractor={(item) => item.id}
+                      renderItem={({ item }) => (
+                       <TouchableOpacity style={{marginRight: 20}} onPress={() => router.push(`/meditation/${item.id}`)}>
+                        <Image
+                        source={{
+                            uri: item.image
+                        }}
+                        style={{
+                            width: 180,
+                            height: 200
+                        }}
+                        />
+                        </TouchableOpacity>
+                      )}
+                    />    
+                    </View>
               </View>
+              </View>
+    
             </View>
-            <View style={{ paddingTop: 20 }}>
-              <Text style={{ fontSize: 18, fontWeight: 600 }}>Explore Moods</Text>
-
-              <View
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "space-between",
-                  marginVertical: 15
-                }}
-              >
-                <FlatList
-                  data={Mods}
-                  horizontal
-                  keyExtractor={(item) => item.id}
-                  renderItem={({ item }) => (
-                    <TouchableOpacity  key={item.id} style={[selectedMod == item.name ? {paddingRight: 30, color: "black", fontSize: 14} : {paddingRight: 30, color: "gray", fontSize: 14}]} onPress={() => handleSelectMod(item.name)}>{item.name}</TouchableOpacity>
-                  )}
-                />  
-
-              </View>
-
-              <View>
-                <FlatList
-                  data={sounds}
-                  horizontal
-                  keyExtractor={(item) => item.id}
-                  renderItem={({ item }) => (
-                   <TouchableOpacity style={{marginRight: 20}} onPress={() => router.push(`/meditation/${item.id}`)}>
-                    <Image
-                    source={{
-                        uri: item.image
-                    }}
-                    style={{
-                        width: 180,
-                        height: 200
-                    }}
-                    />
-                    </TouchableOpacity>
-                  )}
-                />    
-                </View>
-          </View>
-          </View>
-
-        </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
+          </ScrollView>
+        </SafeAreaView>
+      );
+    }
+ 
 };
 
 export default index;
