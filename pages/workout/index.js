@@ -2,10 +2,18 @@ import Link from "next/link";
 import { Button, Text, View } from "react-native-web";
 import { ReactSVG } from "react-svg";
 import { useRouter } from 'next/router'
+import { useEffect, useState } from "react";
 
 const index = () => {
   const router = useRouter()
+  const [loading, setLoading] = useState(true);
 
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 1500)
+  }, [])
   const handleMuscle = (e) => {
     if(e.target.id.includes("Pectorals")) {
       router.push('/workout/chest')
@@ -53,6 +61,28 @@ const index = () => {
   const handleFullWorkout = () => {
     router.push('/workout/full')
   }
+  if(loading) {
+    return (
+      <div
+        style={{
+          position: "fixed",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+        }}
+      >
+        <img
+          src={"/images/loader.gif"}
+          alt={"loader"}
+          style={{
+            width: "300px",
+          }}
+        />
+      </div>
+    );
+  }
+ 
+
   return (
     <main>
       <div class="muscle-groups">

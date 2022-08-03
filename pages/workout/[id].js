@@ -22,6 +22,9 @@ const workout = () => {
         getData()
     }, [id])
     
+    
+      
+      
 
     return (
         <SafeAreaView>
