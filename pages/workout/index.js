@@ -12,7 +12,7 @@ const index = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 1500)
+    }, 2200)
   }, [])
   const handleMuscle = (e) => {
     if(e.target.id.includes("Pectorals")) {
