@@ -184,298 +184,300 @@ const index = () => {
         />
       </div>
     );
-  }
-  return (
-    <View
-      style={{
-        background: "#e2e6e9",
-        minHeight: "100vh",
-      }}
-    >
-      <SafeAreaView>
-        <View>
-          <FlatList
-            data={FilterData}
-            horizontal
-            keyExtractor={(item) => item.id}
-            renderItem={({ item }) => (
-              <View
-                style={{
-                  marginHorizontal: 10,
-                  marginVertical: 20,
-                }}
-                onClick={() => handelFilter(item.title)}
-                key={item.id}
-              >
+  }else{
+    return (
+      <View
+        style={{
+          background: "#e2e6e9",
+          minHeight: "100vh",
+        }}
+      >
+        <SafeAreaView>
+          <View>
+            <FlatList
+              data={FilterData}
+              horizontal
+              keyExtractor={(item) => item.id}
+              renderItem={({ item }) => (
                 <View
-                  style={[
-                    selectedFilter == item.title
-                      ? {
-                          background: "#e3006b",
-
-                          borderRadius: 20,
-                        }
-                      : {
-                          background: "#cbd5e0",
-
-                          borderRadius: 20,
-                        },
-                  ]}
+                  style={{
+                    marginHorizontal: 10,
+                    marginVertical: 20,
+                  }}
+                  onClick={() => handelFilter(item.title)}
+                  key={item.id}
                 >
                   <View
-                    style={{
-                      paddingVertical: "10px",
-                      paddingHorizontal: "20px",
-                      display: "flex",
-                      flexDirection: "row",
-                      justifyContent: "center",
-                    }}
+                    style={[
+                      selectedFilter == item.title
+                        ? {
+                            background: "#e3006b",
+  
+                            borderRadius: 20,
+                          }
+                        : {
+                            background: "#cbd5e0",
+  
+                            borderRadius: 20,
+                          },
+                    ]}
                   >
-                    {item.icon && (
-                      <Player
-                        autoplay
-                        loop
-                        src={item.icon}
-                        style={{
-                          height: "25px",
-                          width: "25px",
-                          marginRight: 5,
-                        }}
-                      ></Player>
-                    )}
                     <View
-                      style={[
-                        selectedFilter == item.title
-                          ? { color: "white" }
-                          : { color: "black" },
-                      ]}
+                      style={{
+                        paddingVertical: "10px",
+                        paddingHorizontal: "20px",
+                        display: "flex",
+                        flexDirection: "row",
+                        justifyContent: "center",
+                      }}
                     >
-                      {item.title}
+                      {item.icon && (
+                        <Player
+                          autoplay
+                          loop
+                          src={item.icon}
+                          style={{
+                            height: "25px",
+                            width: "25px",
+                            marginRight: 5,
+                          }}
+                        ></Player>
+                      )}
+                      <View
+                        style={[
+                          selectedFilter == item.title
+                            ? { color: "white" }
+                            : { color: "black" },
+                        ]}
+                      >
+                        {item.title}
+                      </View>
                     </View>
                   </View>
                 </View>
-              </View>
-            )}
-          />
-        </View>
-        <View style={{ marginHorizontal: 5 }}>
-          <FlatList
-            data={filtredData.length > 0 ? filtredData : initData}
-            horizontal
-            keyExtractor={(item) => item.id}
-            renderItem={({ item }) => (
-              <View
-                style={{
-                  marginVertical: 10,
-                  width: 300,
-                }}
-                key={item.id}
-                onClick={() => handleVideoSelect(item)}
-              >
+              )}
+            />
+          </View>
+          <View style={{ marginHorizontal: 5 }}>
+            <FlatList
+              data={filtredData.length > 0 ? filtredData : initData}
+              horizontal
+              keyExtractor={(item) => item.id}
+              renderItem={({ item }) => (
                 <View
                   style={{
-                    background: "white",
-                    marginRight: 20,
-                    borderRadius: 15,
-                    padding: 5,
+                    marginVertical: 10,
+                    width: 300,
                   }}
+                  key={item.id}
+                  onClick={() => handleVideoSelect(item)}
                 >
-                  <Image
-                    style={{
-                      width: "100%",
-                      height: 200,
-                      borderRadius: 15,
-                    }}
-                    source={{
-                      uri: item.channelLogo,
-                    }}
-                  />
                   <View
                     style={{
-                      padding: 10,
+                      background: "white",
+                      marginRight: 20,
+                      borderRadius: 15,
+                      padding: 5,
                     }}
                   >
+                    <Image
+                      style={{
+                        width: "100%",
+                        height: 200,
+                        borderRadius: 15,
+                      }}
+                      source={{
+                        uri: item.channelLogo,
+                      }}
+                    />
+                    <View
+                      style={{
+                        padding: 10,
+                      }}
+                    >
+                      <View
+                        style={{
+                          marginVertical: 10,
+                        }}
+                      >
+                        <Text style={{ color: "gray", fontWeight: 600 }}>
+                          {item.channelCat}
+                        </Text>
+                      </View>
+                      <View>
+                        <Text
+                          style={{
+                            fontWeight: 600,
+                            fontSize: 16,
+                            color: "#000000c9",
+                          }}
+                        >
+                          {item.name}
+                        </Text>
+                      </View>
+                      <View
+                        style={{
+                          marginTop: 10,
+                          display: "flex",
+                          flexDirection: "row",
+                        }}
+                      >
+                        <View>
+                          <Image
+                            source={{
+                              uri: item.logo,
+                            }}
+                            style={{
+                              width: 50,
+                              height: 50,
+                              borderRadius: 50,
+                            }}
+                          />
+                        </View>
+                        <View
+                          style={{
+                            justifyContent: "center",
+                            marginHorizontal: 10,
+                          }}
+                        >
+                          <Text style={{ fontWeight: 600 }}>{item.channel}</Text>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              )}
+            />
+          </View>
+  
+          <View style={{ marginTop: 20 }}>
+            <Text style={{ marginLeft: 10, fontSize: 16, fontWeight: 600 }}>
+              Recommendation
+            </Text>
+            <View style={{ marginLeft: 10, padding: 5 }}>
+              <ScrollView>
+                <FlatList
+                  data={recommend}
+                  keyExtractor={(item) => item.id}
+                  renderItem={({ item }) => (
                     <View
                       style={{
                         marginVertical: 10,
+                        width: "100%",
+                        maxWidth: "100%",
                       }}
+                      key={item.id}
+                      onClick={() => handleVideoSelect(item)}
+  
                     >
-                      <Text style={{ color: "gray", fontWeight: 600 }}>
-                        {item.channelCat}
-                      </Text>
-                    </View>
-                    <View>
-                      <Text
+                      <View
                         style={{
-                          fontWeight: 600,
-                          fontSize: 16,
-                          color: "#000000c9",
+                          background: "white",
+                          marginRight: 20,
+                          borderRadius: 15,
+                          padding: 5,
+                          display: "flex",
+                          flexDirection: "row",
                         }}
                       >
-                        {item.name}
-                      </Text>
-                    </View>
-                    <View
-                      style={{
-                        marginTop: 10,
-                        display: "flex",
-                        flexDirection: "row",
-                      }}
-                    >
-                      <View>
                         <Image
-                          source={{
-                            uri: item.logo,
-                          }}
                           style={{
-                            width: 50,
-                            height: 50,
-                            borderRadius: 50,
+                            width: "40%", 
+                            height: 100,
+                            borderRadius: 15,
+                          }}
+                          source={{
+                            uri: item.channelLogo,
                           }}
                         />
-                      </View>
-                      <View
-                        style={{
-                          justifyContent: "center",
-                          marginHorizontal: 10,
-                        }}
-                      >
-                        <Text style={{ fontWeight: 600 }}>{item.channel}</Text>
-                      </View>
-                    </View>
-                  </View>
-                </View>
-              </View>
-            )}
-          />
-        </View>
-
-        <View style={{ marginTop: 20 }}>
-          <Text style={{ marginLeft: 10, fontSize: 16, fontWeight: 600 }}>
-            Recommendation
-          </Text>
-          <View style={{ marginLeft: 10, padding: 5 }}>
-            <ScrollView>
-              <FlatList
-                data={recommend}
-                keyExtractor={(item) => item.id}
-                renderItem={({ item }) => (
-                  <View
-                    style={{
-                      marginVertical: 10,
-                      width: "100%",
-                      maxWidth: "100%",
-                    }}
-                    key={item.id}
-                    onClick={() => handleVideoSelect(item)}
-
-                  >
-                    <View
-                      style={{
-                        background: "white",
-                        marginRight: 20,
-                        borderRadius: 15,
-                        padding: 5,
-                        display: "flex",
-                        flexDirection: "row",
-                      }}
-                    >
-                      <Image
-                        style={{
-                          width: "40%", 
-                          height: 100,
-                          borderRadius: 15,
-                        }}
-                        source={{
-                          uri: item.channelLogo,
-                        }}
-                      />
-                      <View
-                        style={{
-                          padding: 10,
-                          maxWidth: "60%",
-                        }}
-                      >
                         <View
                           style={{
-                            marginVertical: 10,
+                            padding: 10,
+                            maxWidth: "60%",
                           }}
                         >
-                          <Text style={{ color: "gray", fontWeight: 600 }}>
-                            {item.channelCat}
-                          </Text>
-                        </View>
-                        <View
-                          style={{
-                            maxWidth: "100%",
-                          }}
-                        >
-                          <Text
+                          <View
                             style={{
-                              fontWeight: 600,
-                              fontSize: 14,
-                              color: "#000000c9",
+                              marginVertical: 10,
                             }}
                           >
-                            {item.name}
-                          </Text>
+                            <Text style={{ color: "gray", fontWeight: 600 }}>
+                              {item.channelCat}
+                            </Text>
+                          </View>
+                          <View
+                            style={{
+                              maxWidth: "100%",
+                            }}
+                          >
+                            <Text
+                              style={{
+                                fontWeight: 600,
+                                fontSize: 14,
+                                color: "#000000c9",
+                              }}
+                            >
+                              {item.name}
+                            </Text>
+                          </View>
+                          <View
+                            style={{
+                              marginTop: 10,
+                              display: "flex",
+                              flexDirection: "row",
+                            }}
+                          ></View>
                         </View>
-                        <View
-                          style={{
-                            marginTop: 10,
-                            display: "flex",
-                            flexDirection: "row",
-                          }}
-                        ></View>
                       </View>
                     </View>
-                  </View>
-                )}
-              />
-            </ScrollView>
-          </View>
-          {selectedViedo && selectedViedo.channelStream &&  (
- <View
-            style={{
-              position: "fixed",
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
-              width: "100%",
-              background: "#000000e0",
-              height: "100%",
-              scrollY: "none"
-            }}
-          >
-            <ReactPlayer width={"100%"} autoplay url={selectedViedo.channelStream} playing />
-            <View
+                  )}
+                />
+              </ScrollView>
+            </View>
+            {selectedViedo && selectedViedo.channelStream &&  (
+   <View
               style={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "space-around",
+                position: "fixed",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+                width: "100%",
+                background: "#000000e0",
+                height: "100%",
+                scrollY: "none"
               }}
             >
-              <View style={{margin: 10}}>
-                <View>
-                  <Text style={{ color: "white", fontSize: 18, fontWeight: 600 }}>{selectedViedo.name}</Text>
+              <ReactPlayer width={"100%"} autoplay url={selectedViedo.channelStream} playing />
+              <View
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-around",
+                }}
+              >
+                <View style={{margin: 10}}>
+                  <View>
+                    <Text style={{ color: "white", fontSize: 18, fontWeight: 600 }}>{selectedViedo.name}</Text>
+                  </View>
+                  <View style={{marginTop: 15}}>
+                    <Text style={{ color: "white", fontSize: 14 }}>{selectedViedo.desc}</Text>
+                  </View>
                 </View>
-                <View style={{marginTop: 15}}>
-                  <Text style={{ color: "white", fontSize: 14 }}>{selectedViedo.desc}</Text>
+                <View style={{position: "relative", top: "20%", alignItems: "center"}}>
+                 <TouchableOpacity style={{background: "white", textAlign: "center", width: "80%", borderRadius: 20, paddingVertical: 5}} onPress={handleClose}>
+                  Close
+                 </TouchableOpacity>
                 </View>
-              </View>
-              <View style={{position: "relative", top: "20%", alignItems: "center"}}>
-               <TouchableOpacity style={{background: "white", textAlign: "center", width: "80%", borderRadius: 20, paddingVertical: 5}} onPress={handleClose}>
-                Close
-               </TouchableOpacity>
               </View>
             </View>
+            )}
+            
           </View>
-          )}
-          
-        </View>
-      </SafeAreaView>
-    </View>
-  );
+        </SafeAreaView>
+      </View>
+    );
+  }
+
 };
 
 export default index;
