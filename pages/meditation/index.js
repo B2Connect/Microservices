@@ -61,7 +61,9 @@ const index = () => {
     const [selectedMod, setSelectedMod] = useState("Recommendation");
     const router = useRouter()
     const [greeting, setGreeting] = useState("");
-    const [filtredSounds, setFiltredSounds] = useState([])
+    const [filtredSounds, setFiltredSounds] = useState([]);
+  const [loading, setLoading] = useState(true);
+
     const handleSelectMod = (Mod) => {
       setSelectedMod(Mod)
   
@@ -80,6 +82,32 @@ const index = () => {
       window.location.href = "https://meditation-native.netlify.app/";
 
     }, [])
+    useEffect(() => {
+      setTimeout(() => {
+        setLoading(false)
+      }, 2500)
+    }, [])
+
+    if(loading) {
+      return (
+        <div
+          style={{
+            position: "fixed",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+          }}
+        >
+          <img
+            src={"/images/loader.gif"}
+            alt={"loader"}
+            style={{
+              width: "300px",
+            }}
+          />
+        </div>
+      );
+    }
   return (
     <SafeAreaView>
       <ScrollView>

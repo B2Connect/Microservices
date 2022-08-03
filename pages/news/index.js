@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   View,
   Text,
@@ -136,7 +136,7 @@ const index = () => {
   const [filtredData, setFiltredData] = useState([]);
   const [selectedFilter, setSelectedFilter] = useState("All");
   const [selectedViedo, setSelectedVideo] = useState({})
-
+  const [loading, setLoading] = useState(true);
 
   const handelFilter = (item) => {
     setSelectedFilter(item);
@@ -156,6 +156,35 @@ const index = () => {
     setSelectedVideo({})
   }
 
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 1500)
+  }, [])
+
+
+
+
+  if(loading) {
+    return (
+      <div
+        style={{
+          position: "fixed",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+        }}
+      >
+        <img
+          src={"/images/loader.gif"}
+          alt={"loader"}
+          style={{
+            width: "300px",
+          }}
+        />
+      </div>
+    );
+  }
   return (
     <View
       style={{

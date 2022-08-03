@@ -37,7 +37,6 @@ function index() {
 
 
 
-
   const toggle = () => setPlaying(!playing);
 
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -125,6 +124,28 @@ function index() {
     return filteredAmount;
   };
 
+
+
+  if(loading) {
+    return (
+      <div
+        style={{
+          position: "fixed",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+        }}
+      >
+        <img
+          src={"/images/loader.gif"}
+          alt={"loader"}
+          style={{
+            width: "300px",
+          }}
+        />
+      </div>
+    );
+  }
   return (
     <>
       <SimpleGrid columns={1} spacing={10}>
