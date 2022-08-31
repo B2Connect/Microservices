@@ -128,7 +128,31 @@ const recommend = [
     channelStream: "https://youtu.be/F-POY4Q0QSI",
     logo: "https://yt3.ggpht.com/ytc/AKedOLSWUC1XEN9_RtfZ6mUX_oN3jo1UuB-KU3tweyxPLb4=s48-c-k-c0x00ffffff-no-rj"
 
-  }
+  },
+    {
+    id: 6,
+    name: "beIN SPORTS News 24/7 Live World Sport News",
+    desc: "beIN SPORTS News Live 24/7",
+    channel: "beIN SPORTS",
+    channelLogo:
+      "https://i.ytimg.com/vi/5VtrmK81NG4/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAVOmmb9ahMUesU4jhlCytvnGOJjw",
+    channelCat: "Sport",
+    channelStream: "https://youtu.be/5VtrmK81NG4",
+    logo: "https://yt3.ggpht.com/ytc/AKedOLTVgHcF-lg44t32-FJpA4Db6xiKkt5GigbWiCq0Rw=s48-c-k-c0x00ffffff-no-rj"
+
+  },
+  {
+    id: 2,
+    name: "DW News livestream | Headline news from around the world",
+    desc: "DW News goes deep beneath the surface, providing the key stories from Europe and around the world. Exciting reports and interviews from the worlds of politics, business, sports, culture and social media are presented by our DW anchors in 15-, 30- and 60-minute shows. ",
+    channel: "DW News",
+    channelLogo:
+      "https://i.ytimg.com/vi/GE_SfNVNyqk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDZ06CWmvzuGxVvll7j4PQgN1gK_Q",
+    channelCat: "World",
+    channelStream: "https://youtu.be/GE_SfNVNyqk",
+    logo: "https://yt3.ggpht.com/ytc/AKedOLToHygnzerTBVOB3GsUcxsPiMP6dIOzFe9T90R0fAE=s48-c-k-c0x00ffffff-no-rj"
+
+  },
 ]
 
 const index = () => {
