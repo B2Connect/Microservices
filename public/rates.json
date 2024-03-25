@@ -1,43 +1,38 @@
 [
-    {
-      "id": 1,
-      "title": "Western Union",
-      "image":
-        "/images/westoren.webp",
-      "rate": 15
-    },
-    {
-      "id": 2,
-      "title": "Al Ansari Exchange",
-      "image":
-        "/images/ansari.webp",
-      "rate": 20
-    },
-    {
-      "id": 3,
-      "title": "Al Fardan Exchange",
-      "image": "/images/fardan.webp",
-      "rate": 21
-    },
-    {
-      "id": 4,
-      "title": "Money Gram",
-      "image":
-        "/images/gram.webp",
-      "rate": 30
-    },
-    {
-      "id": 5,
-      "title": "Al Rostamani",
-      "image":
-        "/images/rostamani.webp",
-      "rate": 30
-    },
-    {
-      "id": 6,
-      "title": "Lulu Exchange",
-      "image":
-        "/images/lulu.webp",
-      "rate": 30
-    }
-  ]
+  {
+    "id": 1,
+    "title": "Western Union",
+    "image": "/images/westoren.webp",
+    "rate": 0.012
+  },
+  {
+    "id": 2,
+    "title": "Al Ansari Exchange",
+    "image": "/images/ansari.webp",
+    "rate": 0.005
+  },
+  {
+    "id": 3,
+    "title": "Al Fardan Exchange",
+    "image": "/images/fardan.webp",
+    "rate": 0.008
+  },
+  {
+    "id": 4,
+    "title": "Money Gram",
+    "image": "/images/gram.webp",
+    "rate": 0.004
+  },
+  {
+    "id": 5,
+    "title": "Al Rostamani",
+    "image": "/images/rostamani.webp",
+    "rate": 0.01
+  },
+  {
+    "id": 6,
+    "title": "Lulu Exchange",
+    "image": "/images/lulu.webp",
+    "rate": 0.007
+  }
+]
